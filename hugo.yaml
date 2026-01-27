@@ -1,4 +1,6 @@
 baseURL: "https://javiergonzalvez07-star.github.io/"
+canonifyURLs: true
+relativeURLs: false
 languageCode: "en-us"
 title: "Hugo Profile"
 theme: "hugo-profile"
