@@ -37,11 +37,7 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+
 
 params:
   title: "Hugo Profile"
@@ -122,7 +118,7 @@ params:
     title: "Javier."
     subtitle: "Mathematical Engineering & Physics student"
     content: "Student interested in Data Science, physical simulations and scientific computing. I build projects combining theory and real-world data."
-    image: /images/hero.svg
+    image: /images/yo.jpeg
     bottomImage:
       enable: true
     button:
