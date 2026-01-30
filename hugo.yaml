@@ -335,6 +335,18 @@ params:
           - "Forecasting"
           - "Market Basket"
           - "MPC"
+          
+      - title: "Road Safety Analysis: Mathematical Modeling of Braking Dynamics"
+        content: "Developed a Python-based simulation to analyze how road friction and human reaction time affect collision speeds in highway and urban environments. The study provides data-driven insights into infrastructure investment by identifying critical safety thresholds for different pavement materials."
+        image: /images/projects/seguridad_vial.png
+        featured:
+          name: "Repo"
+          link: "https://github.com/javiergonzalvez07-star/modelado-friccion-seguridad-vial"
+        badges:
+          - "Physics"
+          - "Simulation"
+          - "Python"
+      
 
 
 
