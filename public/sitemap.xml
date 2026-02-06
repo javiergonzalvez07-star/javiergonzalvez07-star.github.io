@@ -2,22 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://javiergonzalvez07-star.github.io/blogs/content/projects/bank-churn/</loc>
+    <loc>http://localhost:1313/tags/f1-strategy/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://javiergonzalvez07-star.github.io/blogs/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://javiergonzalvez07-star.github.io/categories/</loc>
+    <loc>http://localhost:1313/tags/matplotlib/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://javiergonzalvez07-star.github.io/tags/data-science/</loc>
+    <loc>http://localhost:1313/tags/numpy/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://javiergonzalvez07-star.github.io/tags/eda/</loc>
+    <loc>http://localhost:1313/tags/pandas/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://javiergonzalvez07-star.github.io/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://javiergonzalvez07-star.github.io/tags/machine-learning/</loc>
+    <loc>http://localhost:1313/tags/simulation/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://javiergonzalvez07-star.github.io/tags/python/</loc>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://javiergonzalvez07-star.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/eda/</loc>
+    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
+    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/data-collection/</loc>
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/esp32/</loc>
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/iot/</loc>
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/real-world-data/</loc>
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sensors/</loc>
+    <lastmod>2026-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/numerical-modeling/</loc>
+    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/physics/</loc>
+    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/road-safety/</loc>
+    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/business-analytics/</loc>
+    <lastmod>2026-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/data-analysis/</loc>
+    <lastmod>2026-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/optimization/</loc>
+    <lastmod>2026-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/chaos-theory/</loc>
+    <lastmod>2026-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nonlinear-dynamics/</loc>
+    <lastmod>2026-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/numerical-simulation/</loc>
+    <lastmod>2026-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/odes/</loc>
+    <lastmod>2026-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/content/bank-churn/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blogs/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/data-science/</loc>
   </url>
 </urlset>

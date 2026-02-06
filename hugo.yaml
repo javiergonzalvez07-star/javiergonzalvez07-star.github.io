@@ -288,13 +288,29 @@ params:
   # projects
   projects:
     enable: true
-    items:
+    items: 
+      - title: "F1 Pit-Stop Strategy: Simulation + Real-Data Validation"
+        content: "A simplified physics-based race simulator with tire degradation + pit-loss tradeoffs, validated against modern F1 race data."
+        image: /images/projects/f1.png
+        featured:
+          name: "Know more"
+          link: "/projects/f1/"
+        badges:
+         - "Python"
+         - "NumPy"
+         - "pandas"
+         - "Simulation"
+         - "Data Validation"
+
       - title: "Bank Customer Churn Prediction"
         content: "From raw customer data to an interpretable churn model, with metrics chosen for business decisions."
         image: /images/projects/Banco.png
+    
         featured:
-          name: "Repo"
-          link: "https://github.com/javiergonzalvez07-star/estudio-de-csv-banco"
+          name: "Know more"
+          link: "/projects/bank-churn/"
+
+
         badges:
           - "Python"
           - "pandas"
@@ -303,20 +319,36 @@ params:
       - title: "Chaos ≠ Randomness"
         content: "Time-series comparison of random, periodic and chaotic dynamics (logistic map + double pendulum)."  
         image: /images/projects/caos.png
+
         featured:
-          name: "Repo"
-          link: "https://github.com/javiergonzalvez07-star/Aleatoriedad-vs-Caos"
+          name: "Know more"
+          link: "/projects/caos/"
         badges:
           - "Simulation"
           - "Time Series"
           - "Dynamical Systems"
 
+      - title: "Smart Plant Monitoring: IoT Data Collection in Real Conditions"
+        content: "An ESP32-based plant monitoring system to study soil moisture and environmental conditions, focused on real-world data collection challenges."
+        image: /images/projects/planta.png
+        featured:
+           name: "Know more"
+           link: "/projects/planta/"
+        badges:
+          - "Python"
+          - "ESP32"
+          - "IoT"
+          - "Sensors"
+          - "Data Analysis"
+          - "Data Recollection"
+
+
       - title: "Free Fall with Linear Drag"
         content: "Physical modeling and numerical simulation of vertical motion with linear air resistance, comparing analytical and numerical terminal velocity."
         image: /images/projects/Caida.png
         featured:
-          name: "Repo"
-          link: "https://github.com/javiergonzalvez07-star/Caida-con-rozamiento"
+          name: "Know more"
+          link: "/projects/caida/"
         badges:
           - "Physics"
           - "Simulation"
@@ -327,8 +359,8 @@ params:
         content: "End-to-end study of a supermarket: EDA/cleaning, queueing theory to size checkouts, demand forecasting with regression, product co-occurrence for store layout, and energy optimization of refrigeration via predictive control (MPC)."
         image: /images/projects/Supermercado.png
         featured:
-          name: "Repo"
-          link: "https://github.com/javiergonzalvez07-star/Optimizacion-completa-supermercado"
+          name: "Know more"
+          link: "/projects/supermercado/"
         badges:
           - "EDA"
           - "Queueing"
@@ -341,7 +373,7 @@ params:
         image: /images/projects/seguridad_vial.png
         featured:
           name: "Repo"
-          link: "https://github.com/javiergonzalvez07-star/modelado-friccion-seguridad-vial"
+          link: "/projects/coche/"
         badges:
           - "Physics"
           - "Simulation"
