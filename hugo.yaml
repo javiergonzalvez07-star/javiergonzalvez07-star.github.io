@@ -124,7 +124,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/CV_Javier_Gonzálvez"
+      url: /cv.jpeg
       download: true
       newPage: false
 
