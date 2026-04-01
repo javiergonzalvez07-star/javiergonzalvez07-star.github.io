@@ -124,7 +124,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: /cv.jpeg
+      url: /cv.pdf
       download: true
       newPage: false
 
