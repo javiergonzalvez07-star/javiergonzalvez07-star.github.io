@@ -263,17 +263,17 @@ params:
             - Technical posts on LinkedIn
 
 
-achievements:
-  enable: true
-  title: "Competitions"
-  items:
-    - title: "PLANCKS National 2026"
-      content: "Placed 21st out of 162 teams in the Spanish national round of PLANCKS, competing on advanced theoretical physics problem-solving."
-      url: "https://estudiantes.rsef.es/PreliminaresPLANCKS/"
+  achievements:
+    enable: true
+    title: "Competitions"
+    items:
+      - title: "PLANCKS National 2026"
+        content: "Placed 21st out of 162 teams in the Spanish national round of PLANCKS, competing on advanced theoretical physics problem-solving."
+        url: "https://estudiantes.rsef.es/PreliminaresPLANCKS/"
 
-    - title: "imagin Challenge"
-      content: "Developed and presented a sustainable business idea in a competition focused on innovation, entrepreneurship, and real-world impact."
-      url: "https://www.imagin.com/imaginplanetchallenge"
+      - title: "imagin Challenge"
+        content: "Developed and presented a sustainable business idea in a competition focused on innovation, entrepreneurship, and real-world impact."
+        url: "https://www.imagin.com/imaginplanetchallenge"
 
   # projects
   projects:
