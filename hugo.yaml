@@ -164,7 +164,7 @@ params:
     enable: true
     title: "Leadership & Initiatives"
     items:
-      - company: "Club of Applied Technical Projects"
+      - company: "Applied Technical Projects Club"
         companyUrl: "https://javiergonzalvez07-star.github.io/"
         jobs:
           - name: "Founder & Lead"
