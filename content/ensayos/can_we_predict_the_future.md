@@ -3,6 +3,9 @@ title: "Can we predict the future?"
 date: 2023-03-15
 draft: false
 summary: "From Laplace determinism to Heisenberg uncertainty: can science truly predict the future?"
+layout: "single"
+outputs:
+  - HTML
 ---
 
 Ever since science has existed, scientists have dreamt of finding what they called a "theory of everything". What they meant by this was a theory capable of explaining everything in the universe, something which has not been achieved to this day.

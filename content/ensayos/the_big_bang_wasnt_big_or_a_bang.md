@@ -3,6 +3,9 @@ title: "The Big Bang wasn't big or a bang"
 date: 2023-03-15
 draft: false
 summary: "Why the Big Bang is one of the most misunderstood ideas in modern science."
+layout: "single"
+outputs:
+  - HTML
 ---
 
 The Big Bang has been one of the most popular theories in science and has also been heavily used in films and popular culture.
