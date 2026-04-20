@@ -41,7 +41,7 @@ Menus:
     - identifier: ensayos
       name: Ensayos
       title: Ensayos
-      url: /ensayos
+      url: /ensayos/
       weight: 2
 
 
