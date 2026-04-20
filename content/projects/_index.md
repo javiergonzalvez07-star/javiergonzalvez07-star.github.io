@@ -1,8 +1,8 @@
 ---
 title: "Projects"
-_build:
+build:
   list: never
 cascade:
-  _build:
+  build:
     list: never
 ---
