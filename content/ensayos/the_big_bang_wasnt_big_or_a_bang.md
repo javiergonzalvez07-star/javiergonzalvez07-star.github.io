@@ -20,7 +20,7 @@ According to Einstein's general relativity, mass curves spacetime. If matter is 
 
 Galaxies are not really flying through empty space away from each other. Instead, the space between them is growing.
 
-![Expansion of the Universe](/images/expansion_universo.png)
+![Expansion of the Universe](/static/images/expansion_universo.png)
 
 Once scientists knew the universe was expanding, a natural question appeared:
 
