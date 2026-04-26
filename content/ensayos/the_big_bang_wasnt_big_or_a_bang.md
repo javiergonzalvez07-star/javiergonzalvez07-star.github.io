@@ -20,8 +20,6 @@ According to Einstein's general relativity, mass curves spacetime. If matter is 
 
 Galaxies are not really flying through empty space away from each other. Instead, the space between them is growing.
 
-![Expansion of the Universe](/images/expansion_universo.png)
-
 Once scientists knew the universe was expanding, a natural question appeared:
 
 If we reverse time, what happens?
@@ -51,3 +49,5 @@ So in summary:
 The Big Bang was not big, and it was not a bang.
 
 It is our best model for how the universe expanded from an extremely hot, dense early state.
+
+![Expansion of the Universe](/images/expansion_universo.png)
