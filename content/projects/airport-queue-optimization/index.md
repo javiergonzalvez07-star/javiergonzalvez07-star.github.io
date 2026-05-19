@@ -12,8 +12,8 @@ This project prototyped a **decision-support system for airport queue management
 
 I developed the analytical workflow as part of the Applied Technical Projects Club, contributing to the simulation design, queueing modeling, CSV data pipeline, technical documentation and the project presentation.
 
-<img src="/images/projects/airport_queue_architecture.jpg"
-     alt="Airport Queue Optimization System architecture"
+<img src="/images/projects/airport_hero.jpg"
+     alt="Airport overview"
      style="width: 100%; max-width: 900px; display: block; margin: 1rem auto; border-radius: 14px;">
 
 ---
@@ -42,8 +42,8 @@ The solution combines:
 
 In the prototype, I built the core Python pipeline with `pandas` and `NumPy`, then translated model outputs into readable operational indicators.
 
-<img src="/images/projects/airport_queue_yolo.jpg"
-     alt="YOLO detection proof of concept for airport passenger counting"
+<img src="/images/projects/airport_result_chart1.png"
+     alt="Result comparison chart"
      style="width: 100%; max-width: 900px; display: block; margin: 1rem auto; border-radius: 14px;">
 
 ---
@@ -59,8 +59,8 @@ The model is intentionally modular:
 
 This architecture was designed to keep the proof of concept practical while retaining clear separation between simulation, analysis and visualization.
 
-<img src="/images/projects/airport_queue_system.jpg"
-     alt="Conceptual system architecture for airport queue optimization"
+<img src="/images/projects/airport_bottlenecks.png"
+     alt="Bottleneck events per zone"
      style="width: 100%; max-width: 900px; display: block; margin: 1rem auto; border-radius: 14px;">
 
 ---
@@ -75,8 +75,8 @@ The simulation highlighted a meaningful difference between the baseline and the 
 
 These results come from the prototype simulation and should be understood as a **proof of concept**, not an industrial validation.
 
-<img src="/images/projects/airport_queue_results.jpg"
-     alt="Result comparison for airport queue optimization simulation"
+<img src="/images/projects/airport_wait_evolution.png"
+     alt="Evolution of aggregated wait over time"
      style="width: 100%; max-width: 900px; display: block; margin: 1rem auto; border-radius: 14px;">
 
 ---
@@ -84,8 +84,8 @@ These results come from the prototype simulation and should be understood as a *
 ## Dashboard
 A Streamlit dashboard was used to present the main operational indicators, compare base vs recommendation scenarios, and make the simulation outputs accessible for decision makers.
 
-<img src="/images/projects/airport_queue_dashboard.jpg"
-     alt="Streamlit dashboard for airport queue optimization"
+<img src="/images/projects/airport_dashboard.png"
+     alt="Streamlit dashboard screenshot"
      style="width: 100%; max-width: 900px; display: block; margin: 1rem auto; border-radius: 14px;">
 
 ---
