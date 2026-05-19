@@ -304,6 +304,20 @@ params:
           - "Market Basket"
           - "MPC"
           
+      - title: "Airport Queue Optimization System"
+        content: "Simulation-based decision support for airport passenger flow, queueing theory and operational recommendations."
+        image: /images/projects/airport_queue_architecture.png
+        featured:
+          name: "Know more"
+          link: "/projects/airport-queue-optimization/"
+        badges:
+          - "Python"
+          - "Streamlit"
+          - "Queueing"
+          - "Simulation"
+          - "YOLO"
+          - "Operations Research"
+
       - title: "Road Safety Analysis: Mathematical Modeling of Braking Dynamics"
         content: "Developed a Python-based simulation to analyze how road friction and human reaction time affect collision speeds in highway and urban environments. The study provides data-driven insights into infrastructure investment by identifying critical safety thresholds for different pavement materials."
         image: /images/projects/seguridad_vial.png
