@@ -306,7 +306,7 @@ params:
           
       - title: "Airport Queue Optimization System"
         content: "Simulation-based decision support for airport passenger flow, queueing theory and operational recommendations."
-        image: /images/projects/airport_queue_architecture.jpg
+        image: /images/projects/airport_hero.jpg
         featured:
           name: "Know more"
           link: "/projects/airport-queue-optimization/"
