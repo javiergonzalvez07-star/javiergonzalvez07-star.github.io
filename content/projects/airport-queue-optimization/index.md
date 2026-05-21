@@ -4,7 +4,7 @@ date: 2026-05-19
 draft: false
 tags: ["Python", "pandas", "NumPy", "Streamlit", "Queueing", "Simulation", "YOLO", "Operations Research", "Data Analysis"]
 summary: "Prototype for airport passenger flow simulation and decision support, combining queueing theory, simulated CSV data and operational recommendations."
-featuredImage: "/images/projects/airport_queue_architecture.jpg"
+featuredImage: "/images/projects/airport_hero.jpg"
 ---
 
 ## Overview
