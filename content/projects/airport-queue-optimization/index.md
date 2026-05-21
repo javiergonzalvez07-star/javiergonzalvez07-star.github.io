@@ -42,7 +42,7 @@ The solution combines:
 
 In the prototype, I built the core Python pipeline with `pandas` and `NumPy`, then translated model outputs into readable operational indicators.
 
-<img src="/images/projects/airport_result_chart1.png"
+<img src="/images/projects/aeropuerto_esquema.png"
      alt="Result comparison chart"
      style="width: 100%; max-width: 900px; display: block; margin: 1rem auto; border-radius: 14px;">
 
@@ -59,7 +59,7 @@ The model is intentionally modular:
 
 This architecture was designed to keep the proof of concept practical while retaining clear separation between simulation, analysis and visualization.
 
-<img src="/images/projects/airport_bottlenecks.png"
+<img src="/images/projects/aeropuerto_cuellos_de_botella.png"
      alt="Bottleneck events per zone"
      style="width: 100%; max-width: 900px; display: block; margin: 1rem auto; border-radius: 14px;">
 
@@ -75,7 +75,7 @@ The simulation highlighted a meaningful difference between the baseline and the 
 
 These results come from the prototype simulation and should be understood as a **proof of concept**, not an industrial validation.
 
-<img src="/images/projects/airport_wait_evolution.png"
+<img src="/images/projects/aeropuerto_mejora.png"
      alt="Evolution of aggregated wait over time"
      style="width: 100%; max-width: 900px; display: block; margin: 1rem auto; border-radius: 14px;">
 
@@ -84,7 +84,7 @@ These results come from the prototype simulation and should be understood as a *
 ## Dashboard
 A Streamlit dashboard was used to present the main operational indicators, compare base vs recommendation scenarios, and make the simulation outputs accessible for decision makers.
 
-<img src="/images/projects/airport_dashboard.png"
+<img src="/images/projects/aeropuerto_dashboard.png"
      alt="Streamlit dashboard screenshot"
      style="width: 100%; max-width: 900px; display: block; margin: 1rem auto; border-radius: 14px;">
 
@@ -121,5 +121,5 @@ Potential next steps include:
 
 ## Links
 - Club project page: https://club-proyectos-tecnicos.github.io/projects/airport-queue-optimization/
-- Repository: TODO (add GitHub repo link when available)
-- Documentation/memory PDF: TODO
+- Repository: https://github.com/javiergonzalvez07-star/Optimizacion-Inteligente-Colas-Aeropuertos
+
