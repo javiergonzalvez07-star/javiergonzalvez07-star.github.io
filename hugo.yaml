@@ -227,7 +227,7 @@ params:
     items: 
       - title: "Railway Structural Health Monitoring System"
         content: "Low-cost prototype combining physical sensors, Python data processing, an interpretable damage function and a Streamlit monitoring dashboard."
-        image: /images/projects/railway-monitoring.svg
+        image: /images/projects/railway-monitoring/railway-hero.png
         featured:
           name: "Know more"
           link: "/projects/railway-structural-monitoring/"

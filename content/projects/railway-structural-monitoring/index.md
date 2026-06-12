@@ -5,7 +5,7 @@ date: 2026-06-12
 draft: false
 tags: ["Python", "Streamlit", "Sensors", "ESP32", "Data Processing", "Machine Learning", "Structural Health Monitoring"]
 summary: "Low-cost railway monitoring prototype that turns physical sensor data into interpretable damage indicators and an interactive dashboard."
-featuredImage: "/images/projects/railway-monitoring.svg"
+featuredImage: "/images/projects/railway-monitoring/railway-hero.png"
 mathjax: true
 ---
 
@@ -15,18 +15,15 @@ This project develops a first functional version of a **railway structural healt
 
 The prototype measures acceleration, vibration, temperature and piezoelectric signals with an ESP32-based device. The readings are stored in CSV files, cleaned and normalized in Python, combined through an interpretable damage function, and presented in an interactive Streamlit dashboard.
 
-<img src="/images/projects/railway-monitoring.svg"
-     alt="Railway structural monitoring system overview"
-     style="width: 100%; max-width: 900px; display: block; margin: 1rem auto; border-radius: 14px;">
-
-<!--
-Future project captures:
-- /images/projects/railway-dashboard-device.png
-- /images/projects/railway-dashboard-overview.png
-- /images/projects/railway-architecture.png
-- /images/projects/railway-hardware.png
-- /images/projects/railway-damage-function.png
--->
+<figure style="margin: 1.5rem auto 2rem; max-width: 900px;">
+  <img src="/images/projects/railway-monitoring/railway-hero.png"
+       alt="Railway structural monitoring project overview"
+       loading="eager"
+       style="width: 100%; display: block; border-radius: 14px;">
+  <figcaption style="margin-top: 0.65rem; text-align: center; color: var(--text-secondary-color); font-size: 0.92rem;">
+    End-to-end prototype for railway structural health monitoring.
+  </figcaption>
+</figure>
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.25rem 0 2rem;">
   <a class="btn btn-primary" href="https://github.com/javiergonzalvez07-star/Proyecto1" target="_blank" rel="noopener noreferrer">View repository</a>
@@ -61,6 +58,16 @@ Its central purpose is to move from raw signals to understandable outputs such a
 
 ## System Architecture
 
+<figure style="margin: 1.5rem auto; max-width: 900px;">
+  <img src="/images/projects/railway-monitoring/railway-architecture.png"
+       alt="System architecture from sensors to dashboard"
+       loading="lazy"
+       style="width: 100%; display: block; border-radius: 14px;">
+  <figcaption style="margin-top: 0.65rem; text-align: center; color: var(--text-secondary-color); font-size: 0.92rem;">
+    Complete pipeline from physical measurements to interpretable dashboard indicators.
+  </figcaption>
+</figure>
+
 <div style="overflow-x: auto; margin: 1.25rem 0;">
   <div style="min-width: 760px; display: flex; align-items: stretch; gap: 0.5rem; text-align: center;">
     <div style="flex: 1; padding: 1rem 0.65rem; border: 1px solid rgba(127,127,127,.3); border-radius: 12px;"><strong>Sensors</strong><br><small>Physical signals</small></div>
@@ -90,6 +97,16 @@ Its central purpose is to move from raw signals to understandable outputs such a
 ## Hardware
 
 The hardware was intentionally based on accessible, low-cost components. The objective was not to build an industrial device, but to validate a complete prototype connecting real measurements with mathematical and visual monitoring.
+
+<figure style="margin: 1.5rem auto; max-width: 800px;">
+  <img src="/images/projects/railway-monitoring/railway-hardware-prototype.jpg"
+       alt="Physical prototype with ESP32 and sensors"
+       loading="lazy"
+       style="width: 100%; display: block; border-radius: 14px;">
+  <figcaption style="margin-top: 0.65rem; text-align: center; color: var(--text-secondary-color); font-size: 0.92rem;">
+    Low-cost prototype based on ESP32, vibration, temperature and piezoelectric sensing.
+  </figcaption>
+</figure>
 
 | Component | Role |
 |---|---|
@@ -130,6 +147,16 @@ The dashboard does more than display raw signals. It calculates an aggregated da
   <strong>D = 0.45P + 0.10T + 0.45A</strong>
 </div>
 
+<figure style="margin: 1.5rem auto; max-width: 800px;">
+  <img src="/images/projects/railway-monitoring/railway-damage-function.png"
+       alt="Interpretable damage function with piezoelectric temperature and acceleration weights"
+       loading="lazy"
+       style="width: 100%; display: block; border-radius: 14px;">
+  <figcaption style="margin-top: 0.65rem; text-align: center; color: var(--text-secondary-color); font-size: 0.92rem;">
+    Interpretable weighted model combining piezoelectric response, temperature deviation and dynamic acceleration.
+  </figcaption>
+</figure>
+
 - **P:** normalized piezoelectric contribution
 - **T:** normalized temperature deviation
 - **A:** normalized dynamic acceleration
@@ -153,6 +180,16 @@ The dashboard turns the mathematical model into an understandable monitoring int
 - a train-passage simulator
 
 It allows a user to inspect the current device state, follow the evolution of the signals and understand the estimated condition of the monitored section.
+
+<figure style="margin: 1.5rem auto 2rem; max-width: 900px;">
+  <img src="/images/projects/railway-monitoring/railway-dashboard-individual.png"
+       alt="Individual Streamlit dashboard for the monitored device"
+       loading="lazy"
+       style="width: 100%; display: block; border-radius: 14px;">
+  <figcaption style="margin-top: 0.65rem; text-align: center; color: var(--text-secondary-color); font-size: 0.92rem;">
+    Individual device view showing live indicators, damage and remaining life.
+  </figcaption>
+</figure>
 
 ---
 
