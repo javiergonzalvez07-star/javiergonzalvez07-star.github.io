@@ -225,6 +225,19 @@ params:
   projects:
     enable: true
     items: 
+      - title: "Railway Structural Health Monitoring System"
+        content: "Low-cost prototype combining physical sensors, Python data processing, an interpretable damage function and a Streamlit monitoring dashboard."
+        image: /images/projects/railway-monitoring.svg
+        featured:
+          name: "Know more"
+          link: "/projects/railway-structural-monitoring/"
+        badges:
+          - "Python"
+          - "Streamlit"
+          - "ESP32"
+          - "Sensors"
+          - "Machine Learning"
+
       - title: "F1 Pit-Stop Strategy: Simulation + Real-Data Validation"
         content: "A simplified physics-based race simulator with tire degradation + pit-loss tradeoffs, validated against modern F1 race data."
         image: /images/projects/f1.png
