@@ -2,7 +2,7 @@ baseURL: "https://javiergonzalvez07-star.github.io/"
 canonifyURLs: true
 relativeURLs: false
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Javier Gonzálvez | Mathematical Engineering & Physics"
 theme: "hugo-profile"
 
 outputs:
@@ -15,12 +15,6 @@ outputs:
     - "RSS"
 
 enableRobotsTXT: true
-
-#services:
-  #googleAnalytics:
-    #id: G-MEASUREMENT_ID
-  #disqus:
-    #shortname: your-disqus-shortname
 
 pagination:
   pagerSize: 3
@@ -44,70 +38,21 @@ Menus:
       url: /ensayos/
       weight: 2
 
-
 params:
-  title: "Javier G. - Engineering & Physics"
-  description: Text about my cool site
-  # staticPath: ""  # The path to serve the static files from
+  title: "Javier Gonzálvez | Engineering & Physics"
+  description: "Technical portfolio featuring applied projects in data science, AI, simulation, IoT, scientific computing and physical modelling."
   favicon: "/Logo_2.png"
-
-  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
-  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
-  # Note the lack of "" in true, it should be of boolean type.
   useBootstrapCDN: false
-
-  # If you want to load dynamically responsive images from Cloudinary
-  # This requires your images to be uploaded + hosted on Cloudinary
-  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
-  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
-
-  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
   mathjax: false
-
-  # Whether the fade animations on the home page will be enabled
   animate: true
 
-  theme:
-    # disableThemeToggle: true
-    # defaultTheme: "light" # dark
-
-  font:
-    fontSize: 1rem # default: 1rem
-    fontWeight: 400 # default: 400
-    lineHeight: 1.5 # default: 1.5
-    textAlign: left # default: left
-
-  # color preference
-  # When using hex codes for colors, quotations must be used along with the # sign
-  # color:
-  #   textColor: "#343a40"
-  #   secondaryTextColor: "#6c757d"
-  #   textLinkColor: "#007bff"
-  #   backgroundColor: "#eaedf0"
-  #   secondaryBackgroundColor: "#64ffda1a"
-  #   primaryColor: "#007bff"
-  #   secondaryColor: "#f8f9fa"
-
-  #   darkmode:
-  #     textColor: "#e4e6eb"
-  #     secondaryTextColor: "#b0b3b8"
-  #     textLinkColor: "#ffffff"
-  #     backgroundColor: "#18191a"
-  #     secondaryBackgroundColor: "#212529"
-  #     primaryColor: "#ffffff"
-  #     secondaryColor: "#212529"
-
-  # If you want to customize the menu, you can change it here
   navbar:
-    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Javier G. - Engineering & Physics" # Brand name for the brand | default is the title variable
+    align: ms-auto
+    brandName: "Javier G. | Engineering & Physics"
     disableSearch: false
-    # searchPlaceholder: "Search"
     stickyNavBar:
-      enable : true
-      showOnScrollUp : true
+      enable: true
+      showOnScrollUp: true
     enableSeparator: false
     menus:
       disableAbout: false
@@ -117,13 +62,12 @@ params:
       disableAchievements: false
       disableContact: false
 
-  # Hero
   hero:
     enable: true
     intro: "Hi, my name is"
     title: "Javier."
     subtitle: "Mathematical Engineering & Physics student"
-    content: "Student interested in Data Science, physical simulations and scientific computing. I build projects combining theory and real-world data."
+    content: "I build end-to-end technical projects combining mathematical modelling, data, simulation, AI and physical sensing—from experiments and embedded systems to dashboards and decision-support tools."
     image: /images/yo.jpeg
     bottomImage:
       enable: true
@@ -133,26 +77,22 @@ params:
       url: /cv.pdf
       download: true
       newPage: false
-
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/javiergonzalvez07-star
-
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/javier-gonzalvez-sempere-b526552b0/
 
-  # About
   about:
     enable: true
     title: "About Me"
     content: |
-      I am a first-year student in Mathematical Engineering and Physics with a strong interest in Data Science and physical simulations.
+      I am a Mathematical Engineering and Physics student at Universidad CEU San Pablo with interests spanning data science, applied AI, scientific computing, numerical simulation and physical sensing.
 
-      I enjoy building end-to-end projects: from data collection and cleaning, to modeling, simulation and decision-making.
+      I enjoy building complete systems: defining the problem, collecting or cleaning data, developing interpretable models, validating assumptions, and turning the result into a usable dashboard, application or technical report.
 
-      I regularly publish my work on GitHub and LinkedIn, and I am focused on developing a strong technical profile for future internships.
-
+      My current work includes railway structural-health monitoring, airport queue optimisation, race-strategy simulation, IoT sensing, analytics products and experimental thermal research. I am developing this profile for summer 2027 internships in technology, engineering, data, research and quantitative problem-solving.
     skills:
       enable: true
       items:
@@ -160,30 +100,31 @@ params:
         - pandas
         - NumPy
         - scikit-learn
-        - matplotlib
+        - FastAPI
+        - Streamlit
+        - Plotly
+        - ESP32 / IoT
         - Data Analysis
         - Numerical Simulation
+        - Scientific Computing
+        - Git / GitHub
 
-
-  # Experience
   experience:
     enable: true
     title: "Leadership & Initiatives"
     items:
       - company: "Applied Technical Projects Club"
-        companyUrl: "https://javiergonzalvez07-star.github.io/"
+        companyUrl: "https://github.com/javiergonzalvez07-star/cpta-web"
         jobs:
           - name: "Founder & Lead"
             date: "2025 - Present"
             content: |
-              Founded and currently lead an interdisciplinary student initiative that brings together students from Mathematics, Physics, Telecommunications, Computer Science, and Data Science to develop applied technical projects beyond the classroom.
-              - Designed the club structure and project-based format
-              - Coordinated recruitment, kickoff sessions, and faculty outreach
-              - Led collaboration across different technical profiles on real-world problems
-              
+              Founded and currently lead an interdisciplinary student initiative that brings together students from Mathematics, Physics, Telecommunications, Computer Science and Data Science to develop applied technical projects beyond the classroom.
+              - Designed the club structure and project-based workflow
+              - Coordinated recruitment, kickoff sessions and faculty outreach
+              - Led collaboration across different technical profiles
+              - Organised project groups, deliverables and public documentation
 
-
-  # Education
   education:
     enable: true
     index: false
@@ -194,20 +135,20 @@ params:
           url: "https://www.uspceu.com"
         date: "2025 - Present"
         content: |-
-          First-year student focused on developing a strong applied profile in Data Science and scientific computing.
+          Building an applied technical profile across mathematical modelling, data analysis, scientific programming, simulation and experimental physics.
 
           Main interests:
-            - Data analysis and machine learning
-            - Numerical simulation and physical modeling
-            - Operations Research and optimization
-            - Scientific programming in Python
+            - Data analysis, machine learning and applied AI
+            - Numerical simulation and physical modelling
+            - Operations research and optimisation
+            - Scientific computing in Python
+            - Embedded sensing, IoT and edge systems
 
           Activities:
-            - Personal projects published on GitHub
-            - Technical posts on LinkedIn
-            - Founder of Technical projects club
-            - Physics Researcher at CEU San Pablo
-
+            - Personal technical projects published on GitHub
+            - Founder and lead of the Applied Technical Projects Club
+            - Experimental physics research at CEU San Pablo
+            - Technical communication through portfolio articles and LinkedIn
 
   achievements:
     enable: true
@@ -218,15 +159,14 @@ params:
         url: "https://estudiantes.rsef.es/PreliminaresPLANCKS/"
 
       - title: "Imagin Challenge"
-        content: "Developed and presented a sustainable business idea in a competition focused on innovation, entrepreneurship, and real-world impact."
+        content: "Developed and presented a sustainable business idea in a competition focused on innovation, entrepreneurship and real-world impact."
         url: "https://www.imagin.com/imaginplanetchallenge"
 
-  # projects
   projects:
     enable: true
-    items: 
-      - title: "Railway Structural Health Monitoring System"
-        content: "Low-cost prototype combining physical sensors, Python data processing, an interpretable damage function and a Streamlit monitoring dashboard."
+    items:
+      - title: "Railway Structural Health Monitoring Prototype"
+        content: "Low-cost monitoring prototype combining ESP32 sensors, acceleration, piezoelectric response, temperature measurements, an interpretable condition indicator, synthetic scenarios and a Streamlit dashboard."
         image: /images/projects/railway-monitoring/railway-hero.png
         featured:
           name: "Know more"
@@ -236,39 +176,88 @@ params:
           - "Streamlit"
           - "ESP32"
           - "Sensors"
-          - "Machine Learning"
+          - "Signal Processing"
 
-      - title: "F1 Pit-Stop Strategy: Simulation + Real-Data Validation"
-        content: "A simplified physics-based race simulator with tire degradation + pit-loss tradeoffs, validated against modern F1 race data."
+      - title: "Airport Queue Optimization Platform"
+        content: "Configurable airport-operations prototype combining computer vision, passenger-flow simulation, M/M/c queueing theory, short-term forecasts and dynamic staffing recommendations."
+        image: /images/projects/airport_hero.jpg
+        featured:
+          name: "Know more"
+          link: "/projects/airport-queue-optimization/"
+        badges:
+          - "Python"
+          - "Streamlit"
+          - "Queueing Theory"
+          - "Simulation"
+          - "YOLO"
+          - "Operations Research"
+
+      - title: "Formula 1 Race-Strategy Simulation"
+        content: "Physics-informed race model exploring tyre degradation, pit-stop losses and optimal stop counts, followed by validation against historical Formula 1 strategy data."
         image: /images/projects/f1.png
         featured:
           name: "Know more"
           link: "/projects/f1/"
         badges:
-         - "Python"
-         - "NumPy"
-         - "pandas"
-         - "Simulation"
-         - "Data Validation"
+          - "Python"
+          - "NumPy"
+          - "pandas"
+          - "Simulation"
+          - "Data Validation"
 
-      - title: "Bank Customer Churn Prediction"
-        content: "From raw customer data to an interpretable churn model, with metrics chosen for business decisions."
+      - title: "Bank Customer Churn Analysis"
+        content: "End-to-end customer analytics project combining exploratory analysis, statistical preprocessing, logistic regression, class-aware evaluation and interpretable model conclusions."
         image: /images/projects/Banco.png
-    
         featured:
           name: "Know more"
           link: "/projects/bank-churn/"
-
-
         badges:
           - "Python"
           - "pandas"
           - "scikit-learn"
+          - "Interpretable ML"
 
-      - title: "Chaos ≠ Randomness"
-        content: "Time-series comparison of random, periodic and chaotic dynamics (logistic map + double pendulum)."  
+      - title: "Supermarket Operations Analytics"
+        content: "Multi-domain retail analysis covering EDA, checkout queueing, seven-day demand forecasting, product co-occurrence and predictive refrigeration control."
+        image: /images/projects/Supermercado.png
+        featured:
+          name: "Know more"
+          link: "/projects/supermercado/"
+        badges:
+          - "EDA"
+          - "Queueing"
+          - "Forecasting"
+          - "Market Basket"
+          - "Energy Modelling"
+
+      - title: "Smart Plant Monitoring and Irrigation Criteria"
+        content: "ESP32-based environmental monitoring project focused on real sensor-data quality and an explainable irrigation rule based on threshold persistence."
+        image: /images/projects/planta.png
+        featured:
+          name: "Know more"
+          link: "/projects/planta/"
+        badges:
+          - "Python"
+          - "ESP32"
+          - "IoT"
+          - "Sensors"
+          - "Data Quality"
+
+      - title: "Road-Safety Braking Model"
+        content: "Physics-based simulation analysing how road adhesion, vehicle speed and human reaction time influence stopping distance and collision severity."
+        image: /images/projects/seguridad_vial.png
+        featured:
+          name: "Know more"
+          link: "/projects/coche/"
+        badges:
+          - "Physics"
+          - "Simulation"
+          - "Sensitivity Analysis"
+          - "Python"
+
+      - title: "Randomness vs Chaos"
+        content: "Numerical comparison of stochastic, periodic and chaotic dynamics using the logistic map, a double pendulum and RK4 integration."
         image: /images/projects/caos.png
-
         featured:
           name: "Know more"
           link: "/projects/caos/"
@@ -276,24 +265,10 @@ params:
           - "Simulation"
           - "Time Series"
           - "Dynamical Systems"
-
-      - title: "Smart Plant Monitoring: IoT Data Collection in Real Conditions"
-        content: "An ESP32-based plant monitoring system to study soil moisture and environmental conditions, focused on real-world data collection challenges."
-        image: /images/projects/planta.png
-        featured:
-           name: "Know more"
-           link: "/projects/planta/"
-        badges:
-          - "Python"
-          - "ESP32"
-          - "IoT"
-          - "Sensors"
-          - "Data Analysis"
-          - "Data Recollection"
-
+          - "RK4"
 
       - title: "Free Fall with Linear Drag"
-        content: "Physical modeling and numerical simulation of vertical motion with linear air resistance, comparing analytical and numerical terminal velocity."
+        content: "Computational-physics model of vertical motion with linear drag, comparing numerical and analytical terminal velocity."
         image: /images/projects/Caida.png
         featured:
           name: "Know more"
@@ -304,56 +279,11 @@ params:
           - "ODEs"
           - "Python"
 
-      - title: "Supermarket Optimization (DS + OR + Physics)"
-        content: "End-to-end study of a supermarket: EDA/cleaning, queueing theory to size checkouts, demand forecasting with regression, product co-occurrence for store layout, and energy optimization of refrigeration via predictive control (MPC)."
-        image: /images/projects/Supermercado.png
-        featured:
-          name: "Know more"
-          link: "/projects/supermercado/"
-        badges:
-          - "EDA"
-          - "Queueing"
-          - "Forecasting"
-          - "Market Basket"
-          - "MPC"
-          
-      - title: "Airport Queue Optimization System"
-        content: "Simulation-based decision support for airport passenger flow, queueing theory and operational recommendations."
-        image: /images/projects/airport_hero.jpg
-        featured:
-          name: "Know more"
-          link: "/projects/airport-queue-optimization/"
-        badges:
-          - "Python"
-          - "Streamlit"
-          - "Queueing"
-          - "Simulation"
-          - "YOLO"
-          - "Operations Research"
-
-      - title: "Road Safety Analysis: Mathematical Modeling of Braking Dynamics"
-        content: "Developed a Python-based simulation to analyze how road friction and human reaction time affect collision speeds in highway and urban environments. The study provides data-driven insights into infrastructure investment by identifying critical safety thresholds for different pavement materials."
-        image: /images/projects/seguridad_vial.png
-        featured:
-          name: "Know more"
-          link: "/projects/coche/"
-        badges:
-          - "Physics"
-          - "Simulation"
-          - "Python"
-      
-
-
-
-
   contact:
     enable: true
-    content: "Feel free to reach out for internships, collaborations or questions about my projects: javier.gonzalvez07@gmail.com"
-    btnName: "Get in touch on linkedin"
+    content: "Feel free to reach out about internships, collaborations, research or technical projects: javier.gonzalvez07@gmail.com"
+    btnName: "Connect on LinkedIn"
     btnLink: "https://www.linkedin.com/in/javier-gonzalvez-sempere-b526552b0/"
-
-
-
 
   footer:
     recentPosts:
@@ -366,11 +296,9 @@ params:
       github: "https://github.com/javiergonzalvez07-star"
       linkedin: "https://www.linkedin.com/in/javier-gonzalvez-sempere-b526552b0/"
 
-  # List pages like blogs and posts
   listPages:
     disableFeaturedImage: false
 
-  # Single pages like blog and post
   singlePages:
     socialShare: true
     readTime:
@@ -381,7 +309,6 @@ params:
     tags:
       openInNewTab: true
 
-  # For translations
   terms:
     read: "Read"
     toc: "Table Of Contents"
@@ -393,6 +320,3 @@ params:
     article: "Jan 2, 2006"
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
-
-  #customScripts: -| # You can add custom scripts which will be added before </body> tag
-  #  <script type="text/javascript"><!-- any script here --></script>
