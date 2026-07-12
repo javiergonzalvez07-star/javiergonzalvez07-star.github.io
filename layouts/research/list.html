@@ -1,0 +1,31 @@
+{{ define "head" }}
+<meta name="description" content="{{ .Description }}">
+<link rel="stylesheet" href="{{ "css/research.css" | relURL }}" media="all">
+{{ end }}
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<main id="research" class="container py-5">
+  <header class="research-intro text-center mx-auto mb-5">
+    <span class="research-kicker">Experimental and computational work</span>
+    <h1 class="mt-2">{{ .Title }}</h1>
+    <p class="lead">{{ .Description }}</p>
+    {{ .Content }}
+  </header>
+  <div class="row justify-content-center">
+    {{ range .Pages.ByDate.Reverse }}
+    <div class="col-lg-6 my-3">
+      <article class="card research-card h-100">
+        <div class="card-head"><img class="card-img-top" src="{{ .Params.image | relURL }}" alt="{{ .Params.imageAlt }}" loading="lazy"></div>
+        <div class="card-body p-4">
+          <span class="research-type">{{ .Params.area }}</span>
+          <h2 class="h4 mt-2">{{ .Title }}</h2>
+          <p class="secondary-font">{{ .Params.summary }}</p>
+          <div aria-label="Methods used">{{ range .Params.badges }}<span class="badge">{{ . }}</span>{{ end }}</div>
+        </div>
+        <div class="card-footer bg-transparent border-0 p-4 pt-0"><a class="btn btn-sm" href="{{ .RelPermalink }}" aria-label="Explore research: {{ .Title }}">Explore study</a></div>
+      </article>
+    </div>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

@@ -26,17 +26,23 @@ markup:
 
 Menus:
   main:
+    - identifier: research
+      name: Research
+      title: Research projects
+      url: /research/
+      weight: 1
+
     - identifier: blog
       name: Blog
       title: Blog posts
       url: /blogs
-      weight: 1
+      weight: 2
 
     - identifier: ensayos
       name: Ensayos
       title: Ensayos
       url: /ensayos/
-      weight: 2
+      weight: 3
 
 params:
   title: "Javier Gonzálvez | Engineering & Physics"
