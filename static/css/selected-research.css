@@ -1,0 +1,25 @@
+#selected-research h3 { color: var(--text-secondary-color) !important; }
+#selected-research .research-summary {
+  padding: 1.35rem;
+  background: var(--secondary-color) !important;
+  border: 1px solid rgb(127 127 127 / 20%);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgb(15 80 100 / 10%);
+}
+#selected-research .research-area {
+  color: var(--primary-color);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+#selected-research h4 { margin: .55rem 0 .7rem; font-size: 1.2rem; line-height: 1.3; }
+#selected-research p { margin-bottom: .7rem; color: var(--text-secondary-color); }
+#selected-research .research-result { padding-left: .75rem; border-left: 3px solid var(--primary-color); color: var(--text-color); }
+#selected-research a { color: var(--text-link-color) !important; text-decoration: none; }
+#selected-research .research-summary > a { font-weight: 600; }
+#selected-research .research-all { padding: .45rem .9rem; border-color: var(--primary-color); border-radius: .5rem; }
+#selected-research a:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 3px; }
+@media (max-width: 767px) {
+  #selected-research .research-summary { padding: 1.1rem; }
+}
