@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#eaedf0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#18191a" media="(prefers-color-scheme: dark)">
+
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Description }}">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://javiergonzalvez07-star.github.io/card/">
+  <link rel="icon" href="{{ "Logo_2.png" | absURL }}" type="image/png">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Description }}">
+  <meta property="og:url" content="https://javiergonzalvez07-star.github.io/card/">
+  <meta property="og:site_name" content="Javier Gonzálvez | Engineering & Physics">
+  <meta property="og:image" content="{{ "images/me.png" | absURL }}">
+  <meta property="og:image:alt" content="Javier Gonzálvez">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ .Description }}">
+  <meta name="twitter:image" content="{{ "images/me.png" | absURL }}">
+  <meta name="twitter:image:alt" content="Javier Gonzálvez">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="{{ "css/card.css" | relURL }}">
+
+  <script>
+    try {
+      if (localStorage.getItem("pref-theme") === "dark") document.documentElement.classList.add("dark");
+      if (localStorage.getItem("pref-theme") === "light") document.documentElement.classList.add("light");
+    } catch (_) {}
+  </script>
+</head>
+<body>
+  <main class="card-shell">
+    <article class="portfolio-card" aria-labelledby="card-title">
+      <header class="card-intro">
+        <p class="eyebrow">NFC Portfolio Card</p>
+        <h1 id="card-title">Hi, I’m Javier.</h1>
+        <p class="subtitle">Mathematical Engineering &amp; Physics student building projects across AI, software, simulation, hardware and research.</p>
+        <p class="welcome">Thanks for tapping my card. Here’s the fastest way to explore my work and get in touch.</p>
+      </header>
+
+      <nav class="card-actions" aria-label="Portfolio and contact links">
+        <a class="action action-primary" href="{{ .Site.Home.RelPermalink }}">
+          <span>Explore my portfolio</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+
+        <div class="secondary-actions">
+          <a class="action" href="{{ "cv.pdf" | absURL }}" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 13h6M9 17h6"/></svg>
+            <span>View CV</span>
+          </a>
+          <a class="action" href="https://www.linkedin.com/in/javier-gonzalvez-sempere-b526552b0/" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9v9M6 6.2v.1M10 18v-5a3 3 0 0 1 6 0v5M10 9v9"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a class="action" href="https://github.com/javiergonzalvez07-star" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 19c-4.5 1.4-4.5-2.5-6-3m12 5v-3.5c0-1 .1-1.5-.5-2 2.8-.3 5.7-1.4 5.7-6.2A4.8 4.8 0 0 0 19 6c.1-.3.5-1.6-.1-3.2 0 0-1-.3-3.4 1.3a12 12 0 0 0-6 0C7.1 2.5 6 2.8 6 2.8 5.5 4.4 5.9 5.7 6 6a4.8 4.8 0 0 0-1.3 3.3c0 4.8 3 5.9 5.7 6.2-.4.4-.6.9-.6 1.8V21"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a class="action" href="mailto:javier.gonzalvez07@gmail.com">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7"/></svg>
+            <span>Email me</span>
+          </a>
+        </div>
+      </nav>
+
+      <section class="credibility" aria-labelledby="credibility-title">
+        <h2 id="credibility-title" class="visually-hidden">Areas of work</h2>
+        <ul>
+          <li>Applied AI &amp; software projects</li>
+          <li>Scientific research</li>
+          <li>Hardware, IoT &amp; simulation</li>
+        </ul>
+      </section>
+
+      <footer class="card-footer">
+        <p>Open to summer 2027 internships, research opportunities and technical collaborations.</p>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
