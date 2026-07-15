@@ -12,8 +12,9 @@ This project is a **data-driven analysis and optimization study** focused on rea
 The objective is not only to analyze data, but to **support operational decisions** by modeling trade-offs, constraints, and optimization criteria relevant to retail environments.
 
 <img src="/images/projects/Supermercado.png"
-     alt="Mapa de calor"
+     alt="Supermarket operations analytics visualization"
      style="width: 450px; max-width: 100%; display: block; margin: 1rem auto; border-radius: 12px;">
+
 ---
 
 ## Problem

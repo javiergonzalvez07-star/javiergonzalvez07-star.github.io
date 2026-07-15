@@ -1,0 +1,20 @@
+{{- if hugo.IsMultilingual -}}
+{{- $current := . -}}
+<li class="nav-item navbar-text language-switcher" aria-label="{{ i18n "language_switcher_label" }}">
+  <span class="nav-link language-links">
+    {{- range $index, $language := site.Languages -}}
+      {{- if gt $index 0 }}<span aria-hidden="true"> | </span>{{ end -}}
+      {{- $target := site.Home.RelPermalink -}}
+      {{- range site.Sites }}{{ if eq .Language.Lang $language.Lang }}{{ $target = .Home.RelPermalink }}{{ end }}{{ end -}}
+      {{- range $current.AllTranslations -}}
+        {{- if eq .Language.Lang $language.Lang }}{{ $target = .RelPermalink }}{{ end -}}
+      {{- end -}}
+      {{- if eq $current.Language.Lang $language.Lang -}}
+        <span class="language-link active" aria-current="page">{{ upper $language.Lang }}</span>
+      {{- else -}}
+        <a class="language-link" href="{{ $target }}" hreflang="{{ $language.LanguageCode }}" lang="{{ $language.Lang }}" aria-label="{{ i18n (printf "switch_to_%s" $language.Lang) }}">{{ upper $language.Lang }}</a>
+      {{- end -}}
+    {{- end -}}
+  </span>
+</li>
+{{- end -}}

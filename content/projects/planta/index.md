@@ -15,7 +15,7 @@ Instead of working with clean, ready-made datasets, the core challenge here was 
 
 ---
 <img src="/images/projects/planta.png"
-     alt="Mapa de calor"
+     alt="Smart plant monitoring data visualization"
      style="width: 450px; max-width: 100%; display: block; margin: 1rem auto; border-radius: 12px;">
 
 ## Problem

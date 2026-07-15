@@ -15,8 +15,9 @@ This project explores the **difference between randomness and deterministic chao
 Although both systems can produce unpredictable results, their **origin and structure are fundamentally different**.
 
 <img src="/images/projects/caos.png"
-     alt="Mapa de calor"
+     alt="Randomness and chaos simulation visualization"
      style="width: 450px; max-width: 100%; display: block; margin: 1rem auto; border-radius: 12px;">
+
 ---
 
 ## What I built

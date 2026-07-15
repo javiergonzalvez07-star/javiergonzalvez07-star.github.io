@@ -1,0 +1,84 @@
+- id: language_switcher_label
+  translation: "Elegir idioma"
+- id: switch_to_language
+  translation: "Cambiar a {{ .Language }}"
+- id: switch_to_en
+  translation: "Cambiar a inglés"
+- id: switch_to_es
+  translation: "Cambiar a español"
+- id: nav_toggle
+  translation: "Abrir o cerrar la navegación"
+- id: search_label
+  translation: "Buscar"
+- id: dark_mode_toggle
+  translation: "Cambiar modo oscuro"
+- id: selected_research
+  translation: "Investigación seleccionada"
+- id: view_study
+  translation: "Ver estudio"
+- id: view_all_research
+  translation: "Ver toda la investigación"
+- id: methods_used
+  translation: "Métodos utilizados"
+- id: explore_research
+  translation: "Explorar investigación"
+- id: explore_study
+  translation: "Explorar estudio"
+- id: research_kicker
+  translation: "Trabajo experimental y computacional"
+- id: breadcrumb
+  translation: "Ruta de navegación"
+- id: research_at_glance
+  translation: "La investigación de un vistazo"
+- id: back_to_research
+  translation: "Volver a toda la investigación"
+- id: read_article
+  translation: "Leer artículo"
+- id: back_to_essays
+  translation: "Volver a Ensayos"
+- id: card_eyebrow
+  translation: "Tarjeta NFC del portfolio"
+- id: card_title
+  translation: "Hola, soy Javier."
+- id: card_subtitle
+  translation: "Estudiante de Ingeniería Matemática y Física que desarrolla proyectos de IA, software, investigación y hardware."
+- id: card_actions
+  translation: "Enlaces al portfolio y de contacto"
+- id: card_portfolio
+  translation: "Explorar mi portfolio"
+- id: card_cv
+  translation: "Ver CV"
+- id: card_cv_aria
+  translation: "Ver el CV de Javier Gonzálvez en español"
+- id: card_email
+  translation: "Contactar"
+- id: card_focus
+  translation: "IA · Software · Investigación · Hardware · Simulación"
+- id: card_availability
+  translation: "Disponible para oportunidades en el verano de 2027."
+- id: image_profile_alt
+  translation: "Retrato de Javier Gonzálvez"
+- id: know_more
+  translation: "Saber más"
+- id: project_image
+  translation: "Imagen del proyecto: {{ .Title }}"
+- id: thermal_area
+  translation: "Física experimental · Modelización térmica"
+- id: thermal_title
+  translation: "Respuesta térmica transitoria de un ladrillo hueco modificado con parafina"
+- id: thermal_summary
+  translation: "Comparación con calentamiento controlado respaldada por modelización térmica de orden reducido."
+- id: thermal_result
+  translation: "Comparación de 1.150 s: calentamiento retardado de la cara superior, con incrementos finales de temperatura similares."
+- id: thermal_aria
+  translation: "Ver la investigación sobre el ladrillo hueco modificado con parafina"
+- id: hallucination_area
+  translation: "Evaluación de IA · Investigación de fiabilidad"
+- id: hallucination_title
+  translation: "Estudio de fiabilidad de las alucinaciones de los LLM"
+- id: hallucination_summary
+  translation: "Evaluación emparejada de instrucciones orientadas a la honestidad en 600 respuestas de modelos."
+- id: hallucination_result
+  translation: "21,3 % → 7,3 % de alucinaciones, acompañado de una mayor abstención total e innecesaria."
+- id: hallucination_aria
+  translation: "Ver el estudio de fiabilidad de las alucinaciones de los LLM"

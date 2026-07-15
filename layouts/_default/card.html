@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="{{ .Language.Lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -10,22 +10,26 @@
   <title>{{ .Title }}</title>
   <meta name="description" content="{{ .Description }}">
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://javiergonzalvez07-star.github.io/card/">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">{{ end }}
+  {{ range first 1 (where .AllTranslations "Language.Lang" "en") }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">{{ end }}
   <link rel="icon" href="{{ "Logo_2.png" | absURL }}" type="image/png">
 
   <meta property="og:type" content="profile">
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ .Description }}">
-  <meta property="og:url" content="https://javiergonzalvez07-star.github.io/card/">
-  <meta property="og:site_name" content="Javier Gonzálvez | Engineering & Physics">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:locale" content="{{ replace .Language.LanguageCode "-" "_" }}">
+  {{ range .Translations }}<meta property="og:locale:alternate" content="{{ replace .Language.LanguageCode "-" "_" }}">{{ end }}
+  <meta property="og:site_name" content="{{ .Site.Title }}">
   <meta property="og:image" content="{{ "images/me.png" | absURL }}">
-  <meta property="og:image:alt" content="Javier Gonzálvez">
+  <meta property="og:image:alt" content="{{ i18n "image_profile_alt" }}">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ .Title }}">
   <meta name="twitter:description" content="{{ .Description }}">
   <meta name="twitter:image" content="{{ "images/me.png" | absURL }}">
-  <meta name="twitter:image:alt" content="Javier Gonzálvez">
+  <meta name="twitter:image:alt" content="{{ i18n "image_profile_alt" }}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +37,6 @@
   <link rel="stylesheet" href="{{ "css/card.css" | relURL }}">
 
   <script>
-    document.documentElement.classList.remove("no-js");
     try {
       if (localStorage.getItem("pref-theme") === "dark") document.documentElement.classList.add("dark");
       if (localStorage.getItem("pref-theme") === "light") document.documentElement.classList.add("light");
@@ -45,27 +48,25 @@
     <article class="portfolio-card" aria-labelledby="card-title">
       <header class="card-intro">
         <div class="card-topbar">
-          <p class="eyebrow" data-i18n="eyebrow">NFC Portfolio Card</p>
-          <div class="language-switcher" role="group" aria-label="Choose language" data-i18n-aria-label="languageSelector">
-            <button type="button" class="language-option is-active" data-language="en" aria-pressed="true" aria-label="Switch to English" data-i18n-aria-label="switchEnglish">EN</button>
-            <span aria-hidden="true">|</span>
-            <button type="button" class="language-option" data-language="es" aria-pressed="false" aria-label="Switch to Spanish" data-i18n-aria-label="switchSpanish">ES</button>
-          </div>
+          <p class="eyebrow">{{ i18n "card_eyebrow" }}</p>
+          <nav class="language-switcher" aria-label="{{ i18n "language_switcher_label" }}">
+            {{ range $index, $language := site.Languages }}{{ if gt $index 0 }}<span aria-hidden="true">|</span>{{ end }}{{ $target := site.Home.RelPermalink }}{{ range site.Sites }}{{ if eq .Language.Lang $language.Lang }}{{ $target = .Home.RelPermalink }}{{ end }}{{ end }}{{ range $.AllTranslations }}{{ if eq .Language.Lang $language.Lang }}{{ $target = .RelPermalink }}{{ end }}{{ end }}{{ if eq $.Language.Lang $language.Lang }}<span class="language-option is-active" aria-current="page">{{ upper $language.Lang }}</span>{{ else }}<a class="language-option" href="{{ $target }}" hreflang="{{ $language.LanguageCode }}" lang="{{ $language.Lang }}" aria-label="{{ i18n (printf "switch_to_%s" $language.Lang) }}">{{ upper $language.Lang }}</a>{{ end }}{{ end }}
+          </nav>
         </div>
-        <h1 id="card-title" data-i18n="title">Hi, I’m Javier.</h1>
-        <p class="subtitle" data-i18n="subtitle">Mathematical Engineering &amp; Physics student building projects across AI, software, research and hardware.</p>
+        <h1 id="card-title">{{ i18n "card_title" }}</h1>
+        <p class="subtitle">{{ i18n "card_subtitle" }}</p>
       </header>
 
-      <nav class="card-actions" aria-label="Portfolio and contact links" data-i18n-aria-label="actionsLabel">
+      <nav class="card-actions" aria-label="{{ i18n "card_actions" }}">
         <a class="action action-primary" href="{{ .Site.Home.RelPermalink }}">
-          <span data-i18n="portfolio">Explore my portfolio</span>
+          <span>{{ i18n "card_portfolio" }}</span>
           <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
         </a>
 
         <div class="secondary-actions">
-          <a class="action" href="{{ "cv/javier-gonzalvez-cv-en.pdf" | absURL }}" data-cv-link data-cv-en="{{ "cv/javier-gonzalvez-cv-en.pdf" | absURL }}" data-cv-es="{{ "cv/javier-gonzalvez-cv-es.pdf" | absURL }}" target="_blank" rel="noopener noreferrer" aria-label="View Javier Gonzálvez’s CV in English" data-i18n-aria-label="cvAriaLabel">
+          <a class="action" href="{{ if eq .Language.Lang "es" }}{{ "cv/javier-gonzalvez-cv-es.pdf" | absURL }}{{ else }}{{ "cv/javier-gonzalvez-cv-en.pdf" | absURL }}{{ end }}" target="_blank" rel="noopener noreferrer" aria-label="{{ i18n "card_cv_aria" }}">
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 13h6M9 17h6"/></svg>
-            <span data-i18n="cv">View CV</span>
+            <span>{{ i18n "card_cv" }}</span>
           </a>
           <a class="action" href="https://www.linkedin.com/in/javier-gonzalvez-sempere-b526552b0/" target="_blank" rel="noopener noreferrer">
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9v9M6 6.2v.1M10 18v-5a3 3 0 0 1 6 0v5M10 9v9"/></svg>
@@ -77,92 +78,18 @@
           </a>
           <a class="action" href="mailto:javier.gonzalvez07@gmail.com">
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7"/></svg>
-            <span data-i18n="email">Email me</span>
+            <span>{{ i18n "card_email" }}</span>
           </a>
         </div>
       </nav>
 
-      <p class="focus-line" data-i18n="focus">AI · Software · Research · Hardware · Simulation</p>
+      <p class="focus-line">{{ i18n "card_focus" }}</p>
 
       <footer class="card-footer">
-        <p data-i18n="availability">Open to summer 2027 opportunities.</p>
+        <p>{{ i18n "card_availability" }}</p>
       </footer>
     </article>
   </main>
 
-  <script>
-    (() => {
-      const translations = {
-        en: {
-          eyebrow: "NFC Portfolio Card",
-          title: "Hi, I’m Javier.",
-          subtitle: "Mathematical Engineering & Physics student building projects across AI, software, research and hardware.",
-          portfolio: "Explore my portfolio",
-          cv: "View CV",
-          email: "Email me",
-          focus: "AI · Software · Research · Hardware · Simulation",
-          availability: "Open to summer 2027 opportunities.",
-          languageSelector: "Choose language",
-          actionsLabel: "Portfolio and contact links",
-          cvAriaLabel: "View Javier Gonzálvez’s CV in English",
-          switchEnglish: "Switch to English",
-          switchSpanish: "Switch to Spanish"
-        },
-        es: {
-          eyebrow: "Tarjeta NFC de portfolio",
-          title: "Hola, soy Javier.",
-          subtitle: "Estudiante de Ingeniería Matemática y Física, desarrollando proyectos de IA, software, investigación y hardware.",
-          portfolio: "Ver mi portfolio",
-          cv: "Ver CV",
-          email: "Contactar",
-          focus: "IA · Software · Investigación · Hardware · Simulación",
-          availability: "Abierto a oportunidades para verano de 2027.",
-          languageSelector: "Elegir idioma",
-          actionsLabel: "Enlaces al portfolio y de contacto",
-          cvAriaLabel: "Ver el CV de Javier Gonzálvez en español",
-          switchEnglish: "Cambiar a inglés",
-          switchSpanish: "Cambiar a español"
-        }
-      };
-
-      const languageButtons = document.querySelectorAll("[data-language]");
-      const cvLink = document.querySelector("[data-cv-link]");
-
-      function setLanguage(language, persist = true) {
-        const selected = translations[language] ? language : "en";
-        document.documentElement.lang = selected;
-
-        document.querySelectorAll("[data-i18n]").forEach((element) => {
-          element.textContent = translations[selected][element.dataset.i18n];
-        });
-
-        document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
-          element.setAttribute("aria-label", translations[selected][element.dataset.i18nAriaLabel]);
-        });
-
-        if (cvLink) {
-          cvLink.setAttribute("href", cvLink.getAttribute(`data-cv-${selected}`));
-        }
-
-        languageButtons.forEach((button) => {
-          const isActive = button.dataset.language === selected;
-          button.classList.toggle("is-active", isActive);
-          button.setAttribute("aria-pressed", String(isActive));
-        });
-
-        if (persist) {
-          try { localStorage.setItem("card-language", selected); } catch (_) {}
-        }
-      }
-
-      languageButtons.forEach((button) => {
-        button.addEventListener("click", () => setLanguage(button.dataset.language));
-      });
-
-      let savedLanguage = "en";
-      try { savedLanguage = localStorage.getItem("card-language") || "en"; } catch (_) {}
-      setLanguage(savedLanguage, false);
-    })();
-  </script>
 </body>
 </html>

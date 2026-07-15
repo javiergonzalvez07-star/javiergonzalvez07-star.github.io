@@ -1,7 +1,7 @@
 ---
-title: "Ensayos"
-description: "Artículos, reflexiones y textos largos sobre tecnología, ciencia y proyectos."
+title: "Essays"
+description: "Articles, reflections and long-form writing on technology, science and projects."
 layout: "list"
 ---
 
-Bienvenido a mi sección de ensayos.
+Welcome to my essays section.

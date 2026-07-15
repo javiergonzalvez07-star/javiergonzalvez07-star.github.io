@@ -6,9 +6,7 @@
         <article>
           <header class="mb-5">
             <h1 class="fw-bold mb-2">{{ .Title }}</h1>
-            <p class="text-muted small mb-0">
-              {{ .Date.Format "02 Jan 2006" }}
-            </p>
+            {{ if not .Date.IsZero }}<p class="text-muted small mb-0">{{ .Date | time.Format ":date_long" }}</p>{{ end }}
           </header>
 
           <div class="content">
@@ -18,7 +16,7 @@
           <div class="mt-5 pt-3 border-top">
             {{ with site.GetPage "section" "ensayos" }}
               <a href="{{ .RelPermalink }}" class="text-decoration-none">
-                ← Volver a Ensayos
+                ← {{ i18n "back_to_essays" }}
               </a>
             {{ end }}
           </div>
