@@ -63,7 +63,7 @@
         </a>
 
         <div class="secondary-actions">
-          <a class="action" href="{{ "cv.pdf" | absURL }}" target="_blank" rel="noopener noreferrer">
+          <a class="action" href="{{ "cv/javier-gonzalvez-cv-en.pdf" | absURL }}" data-cv-link data-cv-en="{{ "cv/javier-gonzalvez-cv-en.pdf" | absURL }}" data-cv-es="{{ "cv/javier-gonzalvez-cv-es.pdf" | absURL }}" target="_blank" rel="noopener noreferrer" aria-label="View Javier Gonzálvez’s CV in English" data-i18n-aria-label="cvAriaLabel">
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 13h6M9 17h6"/></svg>
             <span data-i18n="cv">View CV</span>
           </a>
@@ -104,6 +104,7 @@
           availability: "Open to summer 2027 opportunities.",
           languageSelector: "Choose language",
           actionsLabel: "Portfolio and contact links",
+          cvAriaLabel: "View Javier Gonzálvez’s CV in English",
           switchEnglish: "Switch to English",
           switchSpanish: "Switch to Spanish"
         },
@@ -118,12 +119,14 @@
           availability: "Abierto a oportunidades para verano de 2027.",
           languageSelector: "Elegir idioma",
           actionsLabel: "Enlaces al portfolio y de contacto",
+          cvAriaLabel: "Ver el CV de Javier Gonzálvez en español",
           switchEnglish: "Cambiar a inglés",
           switchSpanish: "Cambiar a español"
         }
       };
 
       const languageButtons = document.querySelectorAll("[data-language]");
+      const cvLink = document.querySelector("[data-cv-link]");
 
       function setLanguage(language, persist = true) {
         const selected = translations[language] ? language : "en";
@@ -136,6 +139,10 @@
         document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
           element.setAttribute("aria-label", translations[selected][element.dataset.i18nAriaLabel]);
         });
+
+        if (cvLink) {
+          cvLink.setAttribute("href", cvLink.getAttribute(`data-cv-${selected}`));
+        }
 
         languageButtons.forEach((button) => {
           const isActive = button.dataset.language === selected;
