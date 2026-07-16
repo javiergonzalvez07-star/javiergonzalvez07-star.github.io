@@ -100,3 +100,27 @@ Double Degree student in Mathematical Engineering and Physics at Universidad CEU
 - Portfolio: https://javiergonzalvez07-star.github.io/
 - LinkedIn: https://www.linkedin.com/in/javier-gonzalvez-sempere-b526552b0/
 - GitHub: https://github.com/javiergonzalvez07-star
+# Bilingual content maintenance
+
+The site uses Hugo's native multilingual system. English is the default language and keeps the existing root URLs; Spanish equivalents are published below `/es/`.
+
+## Add or update a page
+
+- Leaf bundles use `index.md` for English and `index.es.md` for Spanish in the same directory.
+- Regular pages use `name.md` and `name.es.md`; section indexes use `_index.md` and `_index.es.md`.
+- Keep both files' slugs and directory structure aligned so Hugo can pair them and the `EN | ES` selector can preserve page context.
+- Translate all visible front matter (`title`, `description`, `summary`, image alternative text, labels and metric captions) as well as the full body. Preserve code, official names, URLs, figures and units.
+- Reusable interface labels belong in both `i18n/en.yaml` and `i18n/es.yaml`. Language-specific home-page data belongs under `languages.<lang>.params` in `hugo.yaml`.
+- Internal template links should resolve a language-aware page (`site.GetPage` followed by `.RelPermalink`) rather than hard-code `/es/` or a root path.
+
+The language selector links to the current page's translation when one exists and safely falls back to the selected language's home page otherwise. `/card/` is the stable English NFC URL and `/es/card/` is its Spanish equivalent; each page links directly to the matching CV and does not depend on JavaScript for language selection.
+
+## Validate
+
+Build to a temporary destination so the versioned `public/` directory is not modified:
+
+```powershell
+hugo --cleanDestinationDir --destination <temporary-directory>
+```
+
+Confirm that every English HTML route has an `/es/` counterpart, language switchers point to equivalent pages, internal links resolve, and each document has the expected `lang`, canonical, `hreflang`, `x-default`, and Open Graph locale metadata.

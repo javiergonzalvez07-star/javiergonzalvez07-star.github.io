@@ -12,7 +12,7 @@ This project is a small, physics-driven Python simulation of **vertical free fal
 The goal is to study how **terminal velocity** appears and to compare the **theoretical** terminal velocity with the **numerical** result from a time-integration simulation. 
 
 <img src="/images/projects/Caida.png"
-     alt="Mapa de calor"
+     alt="Free-fall simulation with linear drag"
      style="width: 450px; max-width: 100%; display: block; margin: 1rem auto; border-radius: 12px;">
 
 ## What I built

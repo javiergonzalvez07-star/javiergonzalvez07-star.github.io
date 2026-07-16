@@ -2,8 +2,185 @@ baseURL: "https://javiergonzalvez07-star.github.io/"
 canonifyURLs: true
 relativeURLs: false
 languageCode: "en-us"
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
 title: "Javier Gonzálvez | Mathematical Engineering & Physics"
 theme: "hugo-profile"
+
+languages:
+  en:
+    languageCode: "en-US"
+    languageName: "English"
+    weight: 1
+    title: "Javier Gonzálvez | Mathematical Engineering & Physics"
+    menus:
+      main:
+        - identifier: research
+          name: Research
+          title: Research projects
+          pageRef: /research
+          weight: 1
+        - identifier: blog
+          name: Blog
+          title: Blog posts
+          pageRef: /blogs
+          weight: 2
+        - identifier: essays
+          name: Essays
+          title: Essays
+          pageRef: /ensayos
+          weight: 3
+  es:
+    languageCode: "es-ES"
+    languageName: "Español"
+    weight: 2
+    title: "Javier Gonzálvez | Ingeniería Matemática y Física"
+    menus:
+      main:
+        - identifier: research
+          name: Investigación
+          title: Proyectos de investigación
+          pageRef: /research
+          weight: 1
+        - identifier: blog
+          name: Blog
+          title: Artículos del blog
+          pageRef: /blogs
+          weight: 2
+        - identifier: essays
+          name: Ensayos
+          title: Ensayos
+          pageRef: /ensayos
+          weight: 3
+    params:
+      title: "Javier Gonzálvez | Ingeniería y Física"
+      description: "Portfolio técnico con proyectos aplicados de ciencia de datos, IA, simulación, IoT, computación científica y modelización física."
+      navbar:
+        brandName: "Javier G. | Ingeniería y Física"
+        searchPlaceholder: "Buscar"
+      hero:
+        intro: "Hola, me llamo"
+        title: "Javier."
+        subtitle: "Estudiante de Ingeniería Matemática y Física"
+        content: "Desarrollo proyectos técnicos de principio a fin que combinan modelización matemática, datos, simulación, IA y sensores físicos: desde experimentos y sistemas embebidos hasta paneles y herramientas de apoyo a la decisión."
+        button:
+          name: "Currículum"
+          url: /cv/javier-gonzalvez-cv-es.pdf
+      about:
+        title: "Sobre mí"
+        content: |
+          Soy estudiante de Ingeniería Matemática y Física en la Universidad CEU San Pablo, con intereses que abarcan la ciencia de datos, la IA aplicada, la computación científica, la simulación numérica y los sensores físicos.
+
+          Me gusta construir sistemas completos: definir el problema, recopilar o depurar datos, desarrollar modelos interpretables, validar supuestos y convertir el resultado en un panel, una aplicación o un informe técnico útil.
+
+          Actualmente trabajo en monitorización de la integridad estructural ferroviaria, optimización de colas aeroportuarias, simulación de estrategias de carrera, sensores IoT, productos analíticos e investigación térmica experimental. Estoy desarrollando este perfil para prácticas en el verano de 2027 en tecnología, ingeniería, datos, investigación y resolución cuantitativa de problemas.
+      experience:
+        title: "Liderazgo e iniciativas"
+        items:
+          - company: "Club de Proyectos Técnicos Aplicados"
+            companyUrl: "https://github.com/javiergonzalvez07-star/cpta-web"
+            jobs:
+              - name: "Fundador y responsable"
+                date: "2025 - Actualidad"
+                content: |
+                  Fundé y actualmente dirijo una iniciativa estudiantil interdisciplinar que reúne a estudiantes de Matemáticas, Física, Telecomunicaciones, Informática y Ciencia de Datos para desarrollar proyectos técnicos aplicados más allá del aula.
+                  - Diseñé la estructura del club y su flujo de trabajo basado en proyectos
+                  - Coordiné la captación, las sesiones iniciales y el contacto con el profesorado
+                  - Lideré la colaboración entre perfiles técnicos diferentes
+                  - Organicé grupos de proyecto, entregables y documentación pública
+      education:
+        items:
+          - title: "Doble Grado en Ingeniería Matemática y Física"
+            school:
+              name: "Universidad CEU San Pablo"
+              url: "https://www.uspceu.com"
+            date: "2025 - Actualidad"
+            content: |-
+              Desarrollo de un perfil técnico aplicado en modelización matemática, análisis de datos, programación científica, simulación y física experimental.
+
+              Principales intereses:
+                - Análisis de datos, aprendizaje automático e IA aplicada
+                - Simulación numérica y modelización física
+                - Investigación operativa y optimización
+                - Computación científica con Python
+                - Sensores embebidos, IoT y sistemas edge
+
+              Actividades:
+                - Proyectos técnicos personales publicados en GitHub
+                - Fundador y responsable del Club de Proyectos Técnicos Aplicados
+                - Investigación en física experimental en CEU San Pablo
+                - Comunicación técnica mediante artículos del portfolio y LinkedIn
+      achievements:
+        title: "Competiciones"
+        items:
+          - title: "PLANCKS Nacional 2026"
+            content: "21.º puesto entre 162 equipos en la fase nacional española de PLANCKS, compitiendo en resolución de problemas avanzados de física teórica."
+            url: "https://estudiantes.rsef.es/PreliminaresPLANCKS/"
+          - title: "Imagin Challenge"
+            content: "Desarrollé y presenté una idea de negocio sostenible en una competición centrada en innovación, emprendimiento e impacto real."
+            url: "https://www.imagin.com/imaginplanetchallenge"
+      projects:
+        items:
+          - title: "Prototipo de monitorización de la integridad estructural ferroviaria"
+            content: "Prototipo de bajo coste que combina sensores ESP32, aceleración, respuesta piezoeléctrica, medidas de temperatura, un indicador de estado interpretable, escenarios sintéticos y un panel en Streamlit."
+            image: /images/projects/railway-monitoring/railway-hero.png
+            featured: { name: "Ver proyecto", link: "/es/projects/railway-structural-monitoring/" }
+            badges: ["Python", "Streamlit", "ESP32", "Sensores", "Procesamiento de señales"]
+          - title: "Plataforma de optimización de colas aeroportuarias"
+            content: "Prototipo configurable para operaciones aeroportuarias que combina visión artificial, simulación de flujos de pasajeros, teoría de colas M/M/c, predicciones a corto plazo y recomendaciones dinámicas de personal."
+            image: /images/projects/airport_hero.jpg
+            featured: { name: "Ver proyecto", link: "/es/projects/airport-queue-optimization/" }
+            badges: ["Python", "Streamlit", "Teoría de colas", "Simulación", "YOLO", "Investigación operativa"]
+          - title: "Simulación de estrategias de carrera de Fórmula 1"
+            content: "Modelo de carrera basado en la física que estudia la degradación de neumáticos, las pérdidas en boxes y el número óptimo de paradas, validado posteriormente con datos históricos de estrategias de Fórmula 1."
+            image: /images/projects/f1.png
+            featured: { name: "Ver proyecto", link: "/es/projects/f1/" }
+            badges: ["Python", "NumPy", "pandas", "Simulación", "Validación de datos"]
+          - title: "Análisis del abandono de clientes bancarios"
+            content: "Proyecto integral de analítica de clientes que combina análisis exploratorio, preprocesamiento estadístico, regresión logística, evaluación sensible al balance de clases y conclusiones interpretables."
+            image: /images/projects/Banco.png
+            featured: { name: "Ver proyecto", link: "/es/projects/bank-churn/" }
+            badges: ["Python", "pandas", "scikit-learn", "ML interpretable"]
+          - title: "Analítica de operaciones de supermercado"
+            content: "Análisis minorista multidominio que abarca EDA, colas en cajas, predicción de demanda a siete días, coocurrencia de productos y control predictivo de refrigeración."
+            image: /images/projects/Supermercado.png
+            featured: { name: "Ver proyecto", link: "/es/projects/supermercado/" }
+            badges: ["EDA", "Colas", "Predicción", "Cesta de la compra", "Modelización energética"]
+          - title: "Monitorización inteligente de plantas y criterio de riego"
+            content: "Proyecto de monitorización ambiental con ESP32 centrado en la calidad de datos reales de sensores y una regla de riego explicable basada en la persistencia de umbrales."
+            image: /images/projects/planta.png
+            featured: { name: "Ver proyecto", link: "/es/projects/planta/" }
+            badges: ["Python", "ESP32", "IoT", "Sensores", "Calidad de datos"]
+          - title: "Modelo de frenado y seguridad vial"
+            content: "Simulación física que analiza cómo la adherencia de la carretera, la velocidad del vehículo y el tiempo de reacción humano influyen en la distancia de detención y la gravedad de la colisión."
+            image: /images/projects/seguridad_vial.png
+            featured: { name: "Ver proyecto", link: "/es/projects/coche/" }
+            badges: ["Física", "Simulación", "Análisis de sensibilidad", "Python"]
+          - title: "Azar frente a caos"
+            content: "Comparación numérica de dinámicas estocásticas, periódicas y caóticas mediante el mapa logístico, un péndulo doble y la integración RK4."
+            image: /images/projects/caos.png
+            featured: { name: "Ver proyecto", link: "/es/projects/caos/" }
+            badges: ["Simulación", "Series temporales", "Sistemas dinámicos", "RK4"]
+          - title: "Caída libre con rozamiento lineal"
+            content: "Modelo de física computacional del movimiento vertical con rozamiento lineal que compara la velocidad terminal numérica y analítica."
+            image: /images/projects/Caida.png
+            featured: { name: "Ver proyecto", link: "/es/projects/caida/" }
+            badges: ["Física", "Simulación", "EDO", "Python"]
+      contact:
+        content: "Puedes escribirme para hablar sobre prácticas, colaboraciones, investigación o proyectos técnicos: javier.gonzalvez07@gmail.com"
+        btnName: "Conectar en LinkedIn"
+      footer:
+        recentPosts:
+          title: "Publicaciones recientes"
+      singlePages:
+        readTime:
+          content: "min de lectura"
+      terms:
+        read: "Leer"
+        toc: "Índice"
+        copyright: "Todos los derechos reservados"
+        pageNotFound: "Página no encontrada"
+        emailText: "Visita este sitio"
 
 outputs:
   home:
@@ -15,6 +192,9 @@ outputs:
     - "RSS"
 
 enableRobotsTXT: true
+
+taxonomies:
+  tag: tags
 
 pagination:
   pagerSize: 3
@@ -80,7 +260,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: /cv.pdf
+      url: /cv/javier-gonzalvez-cv-en.pdf
       download: true
       newPage: false
     socialLinks:

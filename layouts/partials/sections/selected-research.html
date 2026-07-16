@@ -1,26 +1,26 @@
 <section id="selected-research" class="py-5" aria-labelledby="selected-research-title">
   <div class="container">
-    <h3 id="selected-research-title" class="text-center">Selected Research</h3>
+    <h3 id="selected-research-title" class="text-center">{{ i18n "selected_research" }}</h3>
     <div class="row justify-content-center mt-3">
       <div class="col-lg-5 col-md-6 my-2">
         <article class="research-summary h-100">
-          <span class="research-area">Experimental Physics · Thermal Modelling</span>
-          <h4>Transient Thermal Response of a Paraffin-Modified Hollow Brick</h4>
-          <p>Controlled heating comparison supported by reduced-order thermal modelling.</p>
-          <p class="research-result"><strong>1,150 s comparison:</strong> delayed upper-face heating, with similar final temperature increments.</p>
-          <a href="{{ "/research/paraffin-modified-brick/" | relURL }}" aria-label="View research on the paraffin-modified hollow brick">View study <span aria-hidden="true">→</span></a>
+          <span class="research-area">{{ i18n "thermal_area" }}</span>
+          <h4>{{ i18n "thermal_title" }}</h4>
+          <p>{{ i18n "thermal_summary" }}</p>
+          <p class="research-result"><strong>{{ i18n "thermal_result" }}</strong></p>
+          {{ with site.GetPage "/research/paraffin-modified-brick" }}<a href="{{ .RelPermalink }}" aria-label="{{ i18n "thermal_aria" }}">{{ i18n "view_study" }} <span aria-hidden="true">→</span></a>{{ end }}
         </article>
       </div>
       <div class="col-lg-5 col-md-6 my-2">
         <article class="research-summary h-100">
-          <span class="research-area">AI Evaluation · Reliability Research</span>
-          <h4>LLM Hallucination Reliability Study</h4>
-          <p>Paired evaluation of honesty-oriented prompting across 600 model responses.</p>
-          <p class="research-result"><strong>21.3% → 7.3% hallucinations,</strong> accompanied by higher overall and unnecessary abstention.</p>
-          <a href="{{ "/research/llm-hallucination-reliability/" | relURL }}" aria-label="View the LLM hallucination reliability study">View study <span aria-hidden="true">→</span></a>
+          <span class="research-area">{{ i18n "hallucination_area" }}</span>
+          <h4>{{ i18n "hallucination_title" }}</h4>
+          <p>{{ i18n "hallucination_summary" }}</p>
+          <p class="research-result"><strong>{{ i18n "hallucination_result" }}</strong></p>
+          {{ with site.GetPage "/research/llm-hallucination-reliability" }}<a href="{{ .RelPermalink }}" aria-label="{{ i18n "hallucination_aria" }}">{{ i18n "view_study" }} <span aria-hidden="true">→</span></a>{{ end }}
         </article>
       </div>
     </div>
-    <div class="text-center mt-3"><a class="btn btn-sm research-all" href="{{ "/research/" | relURL }}">View all research</a></div>
+    {{ with site.GetPage "/research" }}<div class="text-center mt-3"><a class="btn btn-sm research-all" href="{{ .RelPermalink }}">{{ i18n "view_all_research" }}</a></div>{{ end }}
   </div>
 </section>

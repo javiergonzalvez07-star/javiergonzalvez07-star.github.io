@@ -19,15 +19,13 @@
             </a>
           </h2>
 
-          <p class="text-muted small">
-            {{ .Date.Format "02 Jan 2006" }}
-          </p>
+          {{ if not .Date.IsZero }}<p class="text-muted small">{{ .Date | time.Format ":date_long" }}</p>{{ end }}
 
           {{ with .Params.summary }}
           <p>{{ . }}</p>
           {{ end }}
 
-          <a href="{{ .RelPermalink }}">Read article →</a>
+          <a href="{{ .RelPermalink }}">{{ i18n "read_article" }} →</a>
         </article>
         {{ end }}
 

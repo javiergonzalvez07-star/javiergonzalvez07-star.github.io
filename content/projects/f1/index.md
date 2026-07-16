@@ -14,8 +14,9 @@ This project studies **pit-stop strategy in Formula 1** by combining:
 
 The focus is **interpretability and reasoning**: understanding why an “optimal” number of stops emerges in theory, and why real racing often favors more conservative strategies.
 <img src="/images/projects/f1.png"
-     alt="Mapa de calor"
+     alt="Formula 1 pit-stop strategy simulation"
      style="width: 450px; max-width: 100%; display: block; margin: 1rem auto; border-radius: 12px;">
+
 ---
 
 ## Goals

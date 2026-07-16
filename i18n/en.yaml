@@ -1,0 +1,84 @@
+- id: language_switcher_label
+  translation: "Choose language"
+- id: switch_to_language
+  translation: "Switch to {{ .Language }}"
+- id: switch_to_en
+  translation: "Switch to English"
+- id: switch_to_es
+  translation: "Switch to Spanish"
+- id: nav_toggle
+  translation: "Toggle navigation"
+- id: search_label
+  translation: "Search"
+- id: dark_mode_toggle
+  translation: "Toggle dark mode"
+- id: selected_research
+  translation: "Selected Research"
+- id: view_study
+  translation: "View study"
+- id: view_all_research
+  translation: "View all research"
+- id: methods_used
+  translation: "Methods used"
+- id: explore_research
+  translation: "Explore research"
+- id: explore_study
+  translation: "Explore study"
+- id: research_kicker
+  translation: "Experimental and computational work"
+- id: breadcrumb
+  translation: "Breadcrumb"
+- id: research_at_glance
+  translation: "Research at a glance"
+- id: back_to_research
+  translation: "Back to all research"
+- id: read_article
+  translation: "Read article"
+- id: back_to_essays
+  translation: "Back to Essays"
+- id: card_eyebrow
+  translation: "NFC Portfolio Card"
+- id: card_title
+  translation: "Hi, I’m Javier."
+- id: card_subtitle
+  translation: "Mathematical Engineering & Physics student building projects across AI, software, research and hardware."
+- id: card_actions
+  translation: "Portfolio and contact links"
+- id: card_portfolio
+  translation: "Explore my portfolio"
+- id: card_cv
+  translation: "View CV"
+- id: card_cv_aria
+  translation: "View Javier Gonzálvez’s CV in English"
+- id: card_email
+  translation: "Email me"
+- id: card_focus
+  translation: "AI · Software · Research · Hardware · Simulation"
+- id: card_availability
+  translation: "Open to summer 2027 opportunities."
+- id: image_profile_alt
+  translation: "Portrait of Javier Gonzálvez"
+- id: know_more
+  translation: "Know more"
+- id: project_image
+  translation: "Project image: {{ .Title }}"
+- id: thermal_area
+  translation: "Experimental Physics · Thermal Modelling"
+- id: thermal_title
+  translation: "Transient Thermal Response of a Paraffin-Modified Hollow Brick"
+- id: thermal_summary
+  translation: "Controlled heating comparison supported by reduced-order thermal modelling."
+- id: thermal_result
+  translation: "1,150 s comparison: delayed upper-face heating, with similar final temperature increments."
+- id: thermal_aria
+  translation: "View research on the paraffin-modified hollow brick"
+- id: hallucination_area
+  translation: "AI Evaluation · Reliability Research"
+- id: hallucination_title
+  translation: "LLM Hallucination Reliability Study"
+- id: hallucination_summary
+  translation: "Paired evaluation of honesty-oriented prompting across 600 model responses."
+- id: hallucination_result
+  translation: "21.3% → 7.3% hallucinations, accompanied by higher overall and unnecessary abstention."
+- id: hallucination_aria
+  translation: "View the LLM hallucination reliability study"

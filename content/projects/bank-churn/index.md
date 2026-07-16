@@ -12,8 +12,8 @@ featuredImage: "/images/projects/Banco.png"
 
 This project combines **exploratory data analysis (EDA)** with a **basic predictive modeling extension** applied to a real-world banking customer dataset.  
 The original EDA was developed as a group academic assignment and later extended individually to frame and solve a **binary classification problem** focused on predicting customer churn (whether a customer will leave the bank)
-<img src="/images/projects/mapacalor.png"
-     alt="Mapa de calor"
+<img src="/images/projects/Banco.png"
+     alt="Bank customer analysis visualization"
      style="width: 450px; max-width: 100%; display: block; margin: 1rem auto; border-radius: 12px;">
 
 

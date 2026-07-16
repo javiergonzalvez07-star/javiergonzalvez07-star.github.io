@@ -1,5 +1,4 @@
 {{ define "head" }}
-<meta name="description" content="{{ .Description }}">
 <link rel="stylesheet" href="{{ "css/single.css" | relURL }}" media="all">
 <link rel="stylesheet" href="{{ "css/research.css" | relURL }}" media="all">
 {{ end }}
@@ -8,7 +7,7 @@
 <main id="single" class="research-single">
   <div class="container">
     <article class="mx-auto">
-      <nav aria-label="Breadcrumb" class="research-breadcrumb"><a href="{{ "/research/" | relURL }}">Research</a><span aria-hidden="true"> / </span><span>{{ .Params.shortTitle }}</span></nav>
+      <nav aria-label="{{ i18n "breadcrumb" }}" class="research-breadcrumb">{{ with site.GetPage "/research" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}<span aria-hidden="true"> / </span><span>{{ .Params.shortTitle }}</span></nav>
       <header class="research-hero">
         <div>
           <span class="research-kicker">{{ .Params.area }}</span>
@@ -19,11 +18,11 @@
         <img src="{{ .Params.image | relURL }}" alt="{{ .Params.imageAlt }}">
       </header>
       <section aria-labelledby="glance-title" class="research-glance">
-        <h2 id="glance-title">Research at a glance</h2>
+        <h2 id="glance-title">{{ i18n "research_at_glance" }}</h2>
         <div class="metric-grid">{{ range .Params.glance }}<div class="metric"><span>{{ .label }}</span><strong>{{ .value }}</strong></div>{{ end }}</div>
       </section>
       <div class="page-content research-content">{{ .Content }}</div>
-      <footer class="research-footer"><a class="btn" href="{{ "/research/" | relURL }}">Back to all research</a></footer>
+      {{ with site.GetPage "/research" }}<footer class="research-footer"><a class="btn" href="{{ .RelPermalink }}">{{ i18n "back_to_research" }}</a></footer>{{ end }}
     </article>
   </div>
 </main>

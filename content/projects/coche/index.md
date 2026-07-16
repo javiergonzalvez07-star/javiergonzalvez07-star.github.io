@@ -12,8 +12,9 @@ This project uses **physics-based numerical simulation** to study the impact of 
 By modeling braking dynamics under different surface conditions, the project connects **theoretical physics** with **real-world road safety implications**.
 
 <img src="/images/projects/seguridad_vial.png"
-     alt="Mapa de calor"
+     alt="Road-safety braking simulation visualization"
      style="width: 450px; max-width: 100%; display: block; margin: 1rem auto; border-radius: 12px;">
+
 ---
 
 ## Problem

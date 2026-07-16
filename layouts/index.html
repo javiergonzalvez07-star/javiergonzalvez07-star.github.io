@@ -1,5 +1,4 @@
 {{ define "head" }}
-<meta name="description" content={{ .Site.Params.description }}>
 <link rel="stylesheet" href="{{ (printf "%scss/index.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
 <link rel="stylesheet" href="{{ (printf "%scss/projects.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
 <link rel="stylesheet" href="{{ "css/selected-research.css" | relURL }}" media="all">
