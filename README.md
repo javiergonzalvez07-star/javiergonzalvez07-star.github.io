@@ -25,6 +25,7 @@ The site documents work across several areas:
 
 Examples currently documented in the portfolio include:
 
+- **PeerScope — Competitive Intelligence Platform** — financial KPIs, peer-group benchmarking, interpretable scoring, isolated private imports, grounded AI analysis, and versioned executive reporting;
 - **Airport Queue Optimization Platform** — computer vision, M/M/c queueing, simulation, and operational decision support;
 - **Railway Structural Health Monitoring Prototype** — ESP32 sensing, vibration analysis, condition indicators, and a Streamlit dashboard;
 - **Formula 1 Race-Strategy Simulation** — tyre-degradation modelling and validation with historical race data;
