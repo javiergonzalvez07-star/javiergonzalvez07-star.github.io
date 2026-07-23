@@ -11,7 +11,7 @@ tags: ["Python", "FastAPI", "Supabase", "OpenAI API", "Analítica financiera", "
 badges: ["Python", "FastAPI", "Supabase", "OpenAI API", "Analítica financiera"]
 image: "/images/projects/peerscope/peerscope-landing.webp"
 featuredImage: "/images/projects/peerscope/peerscope-landing.webp"
-images: ["/images/projects/peerscope/peerscope-landing.webp", "/images/projects/peerscope/peerscope-benchmark.webp", "/images/projects/peerscope/peerscope-ai-analyst.webp", "/images/projects/peerscope/peerscope-report.webp"]
+images: ["/images/projects/peerscope/peerscope-landing.webp"]
 imageAlt: "Landing pública de PeerScope que presenta el producto de inteligencia competitiva"
 status: "Beta privada funcional"
 eyebrow: "Caso de estudio de ingeniería y producto"
@@ -106,11 +106,6 @@ El usuario puede preguntar por situación general, riesgos, KPIs prioritarios, c
 
 Las claves de OpenAI permanecen en backend. Las respuestas se fundamentan en valores del sistema, separan afirmaciones verificadas de hipótesis, no inventan cifras ausentes y comunican las limitaciones. El uso puede limitarse según el plan.
 
-<figure class="ps-demo-figure">
-  <img src="/images/projects/peerscope/peerscope-ai-analyst.webp" alt="Demo pública estática del AI Analyst de PeerScope fundamentado en KPIs y contexto de benchmark" loading="lazy" width="1065" height="720">
-  <figcaption>Demo pública estática: interfaz de AI Analyst para preguntas fundamentadas sobre el análisis empresarial.</figcaption>
-</figure>
-
 ### Asistencia durante la preparación de informes
 
 El analista puede pedir una observación concreta, otro enfoque, explicar una anomalía, adaptar el tono o incorporar su propio razonamiento. La IA no sobrescribe ciegamente el documento: se conservan preview, control humano, trazabilidad, estructura aprobada, versionado y separación cliente/interno. Es una capa de interacción y redacción sobre un sistema analítico real, no la fuente de verdad.
@@ -122,11 +117,6 @@ El flujo cubre ficha de empresa, KPIs principales, benchmark por bloques, fortal
 > Los informes se tratan como entregables analíticos versionados, no como respuestas desechables de una IA.
 
 El objetivo no es exportar una tabla, sino crear un documento consistente que pueda revisarse y presentarse.
-
-<figure class="ps-demo-figure">
-  <img src="/images/projects/peerscope/peerscope-report.webp" alt="Demo pública estática de PeerScope con la previsualización de un informe ejecutivo versionado" loading="lazy" width="1065" height="720">
-  <figcaption>Demo pública estática: preview del informe antes de revisión, versionado y exportación HTML/PDF.</figcaption>
-</figure>
 
 ## Imports privados y separación de datos
 

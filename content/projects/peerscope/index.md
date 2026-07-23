@@ -11,7 +11,7 @@ tags: ["Python", "FastAPI", "Supabase", "OpenAI API", "Financial Analytics", "De
 badges: ["Python", "FastAPI", "Supabase", "OpenAI API", "Financial Analytics"]
 image: "/images/projects/peerscope/peerscope-landing.webp"
 featuredImage: "/images/projects/peerscope/peerscope-landing.webp"
-images: ["/images/projects/peerscope/peerscope-landing.webp", "/images/projects/peerscope/peerscope-benchmark.webp", "/images/projects/peerscope/peerscope-ai-analyst.webp", "/images/projects/peerscope/peerscope-report.webp"]
+images: ["/images/projects/peerscope/peerscope-landing.webp"]
 imageAlt: "PeerScope public landing page presenting the competitive-intelligence product"
 status: "Functional private beta"
 eyebrow: "Engineering & product case study"
@@ -106,11 +106,6 @@ Users can ask about the overall position, principal risks, priority KPIs, compar
 
 OpenAI keys stay in the backend. Responses are grounded in system values, verified claims are separated from hypotheses, missing figures must not be invented, and data limitations must be communicated. Usage can be limited by plan.
 
-<figure class="ps-demo-figure">
-  <img src="/images/projects/peerscope/peerscope-ai-analyst.webp" alt="PeerScope AI Analyst static public demo grounded in company KPIs and benchmark context" loading="lazy" width="1065" height="720">
-  <figcaption>Static public demo: AI Analyst interface for grounded questions about the company analysis.</figcaption>
-</figure>
-
 ### Assistance during report preparation
 
 The analyst can request a specific observation, a different emphasis, an anomaly explanation, an adapted tone or reasoning supplied by the human reviewer. AI does not blindly overwrite the document: preview, human control, traceability, an approved structure, versioning, and the internal/client boundary remain intact. It is an interaction and writing layer over a real analytical system—not the data source of truth.
@@ -122,11 +117,6 @@ The report flow covers a company profile, main KPIs, block benchmarks, strengths
 > Reports are treated as versioned analytical deliverables, not disposable AI responses.
 
 The objective is not to export a table, but to create a consistent document that can be reviewed and presented.
-
-<figure class="ps-demo-figure">
-  <img src="/images/projects/peerscope/peerscope-report.webp" alt="PeerScope static public demo showing the preview of a versioned executive report" loading="lazy" width="1065" height="720">
-  <figcaption>Static public demo: report preview before review, versioning and HTML/PDF export.</figcaption>
-</figure>
 
 ## Private imports and data separation
 
