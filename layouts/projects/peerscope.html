@@ -1,0 +1,48 @@
+{{ define "head" }}
+<link rel="stylesheet" href="{{ (printf "%scss/peerscope.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
+{{ end }}
+
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<main class="peerscope" id="main-content">
+  <header class="ps-hero">
+    <div class="ps-shell ps-hero-grid">
+      <div>
+        <span class="ps-status">{{ .Params.status }}</span>
+        <p class="ps-eyebrow">{{ .Params.eyebrow }}</p>
+        <h1>{{ .Title }}</h1>
+        <p class="ps-lead">{{ .Params.subtitle }}</p>
+        <div class="ps-actions">
+          <a class="ps-button ps-button-primary" href="https://peerscope.onrender.com/" target="_blank" rel="noopener noreferrer">{{ .Params.liveLabel }} <span aria-hidden="true">↗</span></a>
+          {{ $projects := site.GetPage "/projects" }}
+          <a class="ps-button" href="{{ with $projects }}{{ .RelPermalink }}{{ else }}{{ site.Home.RelPermalink }}#projects{{ end }}">{{ .Params.backLabel }}</a>
+        </div>
+        <p class="ps-cold-start">{{ .Params.coldStart }}</p>
+      </div>
+      <figure class="ps-hero-visual">
+        <img src="{{ .Params.image | relURL }}" alt="{{ .Params.imageAlt }}" width="1065" height="720">
+        <figcaption>{{ .Params.heroCaption }}</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <div class="ps-shell">
+    <section class="ps-metrics" aria-label="{{ .Params.metricsLabel }}">
+      {{ range .Params.metrics }}
+      <article><strong>{{ .value }}</strong><span>{{ .label }}</span></article>
+      {{ end }}
+    </section>
+    <article class="ps-content">
+      {{ .Content }}
+    </article>
+    <section class="ps-final-cta">
+      <p class="ps-eyebrow">{{ .Params.finalEyebrow }}</p>
+      <h2>{{ .Params.finalTitle }}</h2>
+      <p>{{ .Params.finalText }}</p>
+      <a class="ps-button ps-button-primary" href="https://peerscope.onrender.com/" target="_blank" rel="noopener noreferrer">{{ .Params.liveLabel }} <span aria-hidden="true">↗</span></a>
+      <p class="ps-cold-start">{{ .Params.coldStart }}</p>
+    </section>
+  </div>
+</main>
+{{ end }}

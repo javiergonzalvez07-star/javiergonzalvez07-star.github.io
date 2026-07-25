@@ -121,6 +121,11 @@ languages:
             url: "https://www.imagin.com/imaginplanetchallenge"
       projects:
         items:
+          - title: "PeerScope — Plataforma de inteligencia competitiva"
+            content: "Plataforma analítica integral que transforma datos financieros empresariales en KPIs comparables, benchmarks por peer group, scores competitivos interpretables, diagnósticos asistidos por IA e informes ejecutivos versionados."
+            image: /images/projects/peerscope/peerscope-landing.webp
+            featured: { name: "Ver proyecto", link: "/es/projects/peerscope/" }
+            badges: ["Python", "FastAPI", "Supabase", "OpenAI API", "Analítica financiera"]
           - title: "Prototipo de monitorización de la integridad estructural ferroviaria"
             content: "Prototipo de bajo coste que combina sensores ESP32, aceleración, respuesta piezoeléctrica, medidas de temperatura, un indicador de estado interpretable, escenarios sintéticos y un panel en Streamlit."
             image: /images/projects/railway-monitoring/railway-hero.png
@@ -351,6 +356,19 @@ params:
   projects:
     enable: true
     items:
+      - title: "PeerScope — Competitive Intelligence Platform"
+        content: "End-to-end analytics platform that transforms company financial data into comparable KPIs, peer-group benchmarks, interpretable competitive scores, AI-assisted diagnostics and versioned executive reports."
+        image: /images/projects/peerscope/peerscope-landing.webp
+        featured:
+          name: "View project"
+          link: "/projects/peerscope/"
+        badges:
+          - "Python"
+          - "FastAPI"
+          - "Supabase"
+          - "OpenAI API"
+          - "Financial Analytics"
+
       - title: "Railway Structural Health Monitoring Prototype"
         content: "Low-cost monitoring prototype combining ESP32 sensors, acceleration, piezoelectric response, temperature measurements, an interpretable condition indicator, synthetic scenarios and a Streamlit dashboard."
         image: /images/projects/railway-monitoring/railway-hero.png

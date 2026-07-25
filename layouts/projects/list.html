@@ -14,11 +14,15 @@
     <h2 class="text-center pb-2">{{.Title}}</h2>
     <div class="row">
         {{ range .Paginator.Pages }}
+        {{- $project := . -}}
+        {{- $cover := .Params.image | default .Params.featuredImage -}}
         <div class="col-lg-4 col-md-6 my-3">
             <div class="card my-3 h-100" title="{{ .Title }}">
+                {{ with $cover }}
                 <div class="card-head">
-                    <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Params.imageAlt | default (i18n "project_image" (dict "Title" .Title)) }}">
+                    <img class="card-img-top" src="{{ . | relURL }}" alt="{{ $project.Params.imageAlt | default (i18n "project_image" (dict "Title" $project.Title)) }}">
                 </div>
+                {{ end }}
                 <div class="card-body bg-transparent p-3">
                     <div class="pb-2 bg-transparent">
                         {{ range .Params.badges }}
